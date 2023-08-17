@@ -1,0 +1,399 @@
+.progress li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    
+    animation-fill-mode: forwards;
+}
+.progress li.front1::after{
+    animation-name: front1;
+}
+@keyframes front1{
+    to{
+        width: 361px;
+    }
+}
+.progress li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    
+    animation-fill-mode: forwards;
+}
+.progress li.front2::after{
+    animation-name: front2;
+}
+@keyframes front2{
+    to{
+        width: 361px;
+    }
+}
+.progress li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    
+    animation-fill-mode: forwards;
+}
+.progress li.front3::after{
+    animation-name: front3;
+}
+@keyframes front3{
+    to{
+        width: 264px;
+    }
+}
+.progress li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    
+    animation-fill-mode: forwards;
+}
+.progress li.front4::after{
+    animation-name: front4;
+}
+@keyframes front4{
+    to{
+        width: 361px;
+    }
+}
+.progress1 li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    
+    animation-fill-mode: forwards;
+}
+.progress1 li.back1::after{
+    animation-name: back1;
+}
+@keyframes back1{
+    to{
+        width: 264px;
+    }
+}
+.progress1 li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    
+    animation-fill-mode: forwards;
+}
+.progress1 li.back2::after{
+    animation-name: back2;
+}
+@keyframes back2{
+    to{
+        width: 264px;
+    }
+}
+.progress1 li::after{
+    content:"";
+    position: absolute;
+    background-color: #407BFF;
+    width: 0;
+    height:3px;
+    top: calc(100% + 5px);
+    left:0;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    
+    animation-fill-mode: forwards;
+}
+.progress1 li.back3::after{
+    animation-name: back3;
+}
+@keyframes back3{
+    to{
+        width: 351px;
+    }
+}
+.last-nav {
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes wobble {
+    0% {transform: translateX(0) rotate(0deg);}
+    15% {transform: translateX(-3px) rotate(-5deg);}
+    30% {transform: translateX(15px) rotate(3deg);}
+    45% {transform: translateX(-15px) rotate(-3deg);}
+    60% {transform: translateX(9px) rotate(2deg);}
+    75% {transform: translateX(-6px) rotate(-1deg);}
+    100% {transform: translateX(0) rotate(0deg);}
+  }
+  
+              
+.work {
+    animation-name: bounce;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+      100% {transform: translateY(0);}
+  }
+
+              
+  
+              
+.card1{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.card1:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.card2{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.card2:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.card3{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.card3:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.card4{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.card4:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.sit {
+    animation-name: bounce;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+      100% {transform: translateY(0);}
+  } 
+  
+              
+.real-strength {
+    animation-name: flicker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes flicker {
+    0% {opacity: 1;}
+    25% {opacity: 0.5;}
+    50% {opacity: 1;}
+    75% {opacity: 0.5;}
+    100% {opacity: 1;}
+  }
+  .why-bull>li{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.why-bull>li:hover{
+    transform: translatex(20px);
+        -webkit-transform: translatex(20px);
+        -moz-transform: translatex(20px);
+}
+.why-bull2>li{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.why-bull2>li:hover{
+    transform: translatex(20px);
+        -webkit-transform: translatex(20px);
+        -moz-transform: translatex(20px);
+}      
+.team-dis {
+    animation-name: bounce;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+      100% {transform: translateY(0);}
+  }
+
+              
+.cv-btn{
+    color: #fff;
+    border: 3px solid #1770B5;
+    background-image: -webkit-linear-gradient(30deg, #1770B5 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #1770B5 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.cv-btn:hover {
+    background-position: 100%;
+    color:#1770B5;
+  }
+  .cus1{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.cus1:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.cus2{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.cus2:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+.cus3{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.cus3:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+             
+
+              
+.addimg{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.addimg:hover{
+    transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+}
+.enter:hover {
+    animation-name: jello;
+        -webkit-animation-name: jello;
+        -moz-animation-name: jello;
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    transform-origin: center;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+}
+
+    @keyframes jello {
+        from,11.1%,to {transform: translate3d(0, 0, 0);}
+        22.2% {transform: skewX(-12.5deg) skewY(-12.5deg);}
+        33.3% {transform: skewX(6.25deg) skewY(6.25deg);}
+        44.4% {transform: skewX(-3.125deg) skewY(-3.125deg);}
+        55.5% {transform: skewX(1.5625deg) skewY(1.5625deg);}
+        66.6% {transform: skewX(-0.78125deg) skewY(-0.78125deg);}
+        77.7% {transform: skewX(0.390625deg) skewY(0.390625deg);}
+        88.8% {transform: skewX(-0.1953125deg) skewY(-0.1953125deg);}
+    }
+
+              
+    .add{
+        transition: .5s, color .10s;
+            -webkit-transition: .5s, color .10s;
+            -moz-transition: .5s, color .10s;
+    }
+    .add:hover{
+        transform: translatex(20px);
+            -webkit-transform: translatex(20px);
+            -moz-transform: translatex(20px);
+    }
+    .add1{
+        transition: .5s, color .10s;
+            -webkit-transition: .5s, color .10s;
+            -moz-transition: .5s, color .10s;
+    }
+    .add1:hover{
+        transform: translatex(20px);
+            -webkit-transform: translatex(20px);
+            -moz-transform: translatex(20px);
+    }
+    .add2{
+        transition: .5s, color .10s;
+            -webkit-transition: .5s, color .10s;
+            -moz-transition: .5s, color .10s;
+    }
+    .add2:hover{
+        transform: translatex(20px);
+            -webkit-transform: translatex(20px);
+            -moz-transform: translatex(20px);
+    }
+              
+                          
