@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stack Blocks</title>
+  <title>Document</title>
   <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
@@ -21,32 +22,50 @@
 />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.1/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<script src="index.js"></script>
+
 </head>
 
-<body>
-  <div class="container1 data-scroll-index = 0">
-    <div class="navbar">
-      <img src="./images/Frame 176.png">
-
-      <div class="nav-links">
-        <ul>
-          <!-- <li><a href="#">Home</li>
-          <li><a href="1">Features</li>
-          
-          
-          <li><a href="#">About us</li>
-          <li><a href="#">Projects</li>
-            
-          <div class="last-nav">
-            Contact Us
-          </div> -->
-         
-        </ul>
-        
-      </div>
-      
+<body >
+  <div class="main-load" onload="load()" id="context">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+</div>
+
+  <div class="container1">
+  <header>
+    <nav class="navbar">
+       <a href="#" class="nav-branding"><img src="./Frame 177.png" width="234px"></a>
+       <ul class="nav-menu">
+           <li class="nav-item">
+               <a href="index.html" class="nav-link" id="link">Home</a>
+           </li>
+           <li class="nav-item">
+               <a href="#fea" class="nav-link" id="link">Features</a>
+           </li>
+           <li class="nav-item">
+               <a href="#rev" class="nav-link" id="link">Reviews</a>
+           </li>
+           <!-- <li class="nav-item">
+            <a href="#" class="nav-link" id="link">About Us</a>
+           </li> -->
+           <li class="nav-item">
+            <a href="#proj" class="nav-link" id="link">Projects</a>
+            </li>
+           <li class="nav-item" id="contu">
+               <a href="#" class="nav-link">Contact us</a>
+           </li>
+       </ul>
+       <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+       </div>
+    </nav>
+   </header>
   </div>
   <div class="container1  data-scroll-index = 1">
     <!-- <div class="curve"> -->
@@ -55,7 +74,7 @@
     <div class="title">
       <!-- <img class = "work" src="images/12780654_5052907 1.png" alt="">
           <img class ="work1" src="images/Frame 174.png"> -->
-      <h1>
+      <h1 id="tile">
         <span id="hell">Unleashing</span> the Power of<br><span id="hell1">Design and Technology.</span>
         
 
@@ -63,7 +82,7 @@
       <img class="work" src="images/12780654_5052907 1.png" alt="">
       <!-- <img class = "work" src="images/12780654_5052907 1.png" alt="">
           <img class ="work1" src="images/Frame 174.png"> -->
-      <p class="title-para">
+      <p class="title-para" id=creat>
         We create beautiful, functional, and user-friendly websites that will
       </p>
       <p class="title-para1">
@@ -74,21 +93,21 @@
     </div>
     <img class="line" src="images/Line 69.png">
   </div>
-  <section class="Features">
+  <section class="Features" id="fea">
     <div class="container1 ">
 
       <div class="fea-main">
-      <h1 class="fea-head">
+      <h1 class="fea-head" id="feau">
         <span id="hell3">Features</span> We Provide To Our Customers
       </h1>
-      <p class="title-para3">
+      <p class="title-para3" id="tileu">
         Our website making company offers cutting-edge features<br>including responsive design, intuitive navigation,
         SEO optimization,<br> customizable templates, e-commerce integration, secure hosting,<br> social media
         integration, and seamless user experience.
       </p>
       </div>
       <div class="card-1">
-        <div class="card1">
+        <div class="card1" id="card1">
           <img src="images/Rectangle 404.png">
           <h3 class="card-head">Web development</h3>
           <ul class="card-bul">
@@ -125,8 +144,8 @@
           <h3 class="card-head2">App Development</h3>
           <ul class="card-bul2">
             <li>Cross-platform compatibility</li>
-            <li>Cross-platform compatibility</li>
-            <li>Cross-platform compatibility</li>
+            <li>Offline functionality support</li>
+            <li>Secure user authentication</li>
             <li>Real-time data synchronization</li>
           </ul>
           <div class="dev2">
@@ -190,7 +209,7 @@
 
         </ul>
       </div>
-      <img class="line" src="images/Line 69.png">
+      <img class="line" id="liney" src="images/Line 69.png">
 
     </div>
   </section>
@@ -212,6 +231,200 @@
     </div>
 
   </section> -->
+  <section>
+    <div class="container1">
+      <div class="price-title">
+      <h1> Our <span id = "hell">Pricing</span></h1>
+      
+      </div>
+      <p class="price-para">Affordable web development pricing, delivering quality solutions for your business.</p>
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="box1">
+              <div class="swiper-slide">
+                  <div class="box1">
+                      <img src="./Group 9020 (1).png">
+                      
+                      <div class="ul">
+                          
+                          
+                          <li>5 Pages
+                          </li>
+                          <li>Static Site
+                          </li>
+                          <li>+5000 Rs for Table Reservation System</li>
+                          
+                          <li>WhatsApp API Integration
+                          </li>
+                          <li>Basic Security
+                          </li>
+                          <li>800 Rs. Per customization
+                          </li>
+                          
+                          <li>1 Email Account
+                          </li>
+              
+                          <li>Free POS Software
+                          </li>
+                          
+                          <li>3,000 Monthly Maintenance
+                          </li>
+                          
+                      </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide" >
+                  <div class="box1">
+                    <img src="./Frame 1.png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Static Site
+                        </li>
+                        <li>+5000 Rs for Table Reservation System</li>
+                        
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Cloud Security
+                        </li>
+                        <li>First 2 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>4 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="box1">
+                    <img src="./Group 9019 (1).png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Dynamic website
+                        </li>
+                        <li>+5000 Rs for Table Reservation System</li>
+                        <li>Free QR Code Menu System
+                        </li>
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Imunify360 Firewall + Cloud Security
+                        </li>
+                        <li>First 3 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>4 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="box1">
+                    <img src="./Group 9023 (3).png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Dynamic website
+                        </li>
+                        <li>SMS Gateway Integration
+                        </li>
+                        <li>+5000 Rs for Table Reservation System
+                        </li>
+                        <li>Free QR Code Menu System
+                        </li>
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Imunify360 Firewall + Cloud Security
+                        </li>
+                        <li>First 3 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>5 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box1">
+                  <img src="./Group 9025 (1).png">
+                    
+                  <div class="ul">
+                      <li>3-Installment Payment Method</li>
+                      
+                      <li>20 Pages
+                      </li>
+                      <li>Gallery for Website
+                      </li>
+                      <li>Dynamic website
+                      </li>
+                      <li>SMS Gateway Integration
+                      </li>
+                      <li>+5000 Rs for Table Reservation System
+                      </li>
+                      <li>Free QR Code Menu System
+                      </li>
+                      <li>WhatsApp API Integration
+                      </li>
+                      <li>AWS Firewall + Cloud Security
+                      </li>
+                      <li>First 6 Customization for free
+                      </li>
+                      <li>800 Rs. Per customization
+                      </li>
+                      <li>10 Email Accounts
+                      </li>
+          
+                      <li>Free POS Software
+                      </li>
+                      
+                      <li>3,000 Monthly Maintenance
+                      </li>
+                      
+                  </div>
+                    <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+  </section>
   <!-- <section>
     <div class="container1">
         <div class="price-title">
@@ -245,6 +458,7 @@
     </div>
     </div>
   </section> -->
+  
   <section>
     <div class="container1">
       <div class="textboss">
@@ -265,7 +479,7 @@
               </div>
               <div class="splide__slide">
                 <div class="img_box">
-                  <img class="img" src="images/image 1 (1).png">
+                  <img class="img" src="./image 1 (5).png">
                 </div>
               </div>
               <div class="splide__slide">
@@ -291,13 +505,15 @@
         <img src="images/Frame 189.png" alt="">
       </div>
     </div>
+   
   </section>
   <section class="why">
     <div class="container1 ">
       <div class="titlemax">
-        <h1 class="why-title">
+        <h1 class="why-title" id="why">
           Why <span id="hell">Choose</span> Us?
         </h1>
+        <p>Discover client experiences, their words echoing our commitment to exceptional service and satisfaction.</p>
       </div>
       <div class="why-dots">
         <ul class="why-bull">
@@ -323,6 +539,7 @@
       <h1 class="team-title">
         Meet Our <span id="hell">Team</span>
       </h1>
+      <p>Our team delivers tailored solutions and exceptional service for your needs.</p>
      </div>
     </div>
     <div class="container1">
@@ -359,7 +576,7 @@
   <section>
     <div class="container1">
       <div class="wrapper">
-        <h1 class="section-header">Our <span id="hell">Projects</span></h1>
+        <h1 class="section-header" id="proj">Our <span id="hell">Projects</span></h1>
         <div class="main-content">
             <div class="box">
                 <img src="images/image 27.png" alt="">
@@ -402,8 +619,8 @@
                 <img src="images/image 322.png" alt="">
                 <div class="img-text">
                     <div class="content">
-                        <h2>Educational App</h2>
-                    <p>Educational Platform that provides Courses related to Cybersecurity & Development</p>
+                        <h2>Encoderspro</h2>
+                    <p>ENCODERSPRO Provides Courses related to Cybersecurity, Full-Stack Development, Networking & Advanced Bug Bounty with the best experts in India</p>
                     </div>
                 </div>
             </div>
@@ -420,30 +637,25 @@
     </div>
     </div>
   </section>
-  <section>
-    <div class="container1 ">
-      <img class="team-dis" src="images/Team Discussion.png">
-
-      <h3 class="dis-title">Get a chance to <span id="hell">work with us!</span></h3>
-      <p class="dis-title2">Connect To us Through Our Social Media Handles Or Directly<br>Mail Us At</p>
-
-
-      <div class="cv-btn">
-        <p>Share your cv / portfolio</p>
-      </div>
-      <!-- < <img class="dis-curve" src="images/Ellipse 281.png"> -->
-    </div>
-
-  </section>
   <!-- <section>
+    <div class="container1">
+      <img id="disid" src="images/Team Discussion.png">
+      <p id="going">Get a chance to <span id="hell"> work with us!</span></p>
+      <p id="going2">Connect To us Through Our Social Media Handles Or Directly Mail Us At </p>
+      <button id="going3"><a href="#">Share your cv / portfolio</a></button>
+  </div>
+
+  </section> -->
+  <section id="rev">
     <div class="container1 ">
       <div class="curse">
         <h1 class="cus-title">
           What Our Customer <span id="hell">Say About Us?</span>
 
         </h1>
+        <p>Hear from satisfied clients about their experiences, showcasing our commitment to excellence.</p>
         <div class="container1">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiperr" id="custo">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="./Rectangle 339.png" />
@@ -480,7 +692,7 @@
       </div>
     </div>
 
-  </section> -->
+  </section>
 
   <!-- <section >
     <div class="container1 ">
@@ -532,11 +744,11 @@
               
           </p>
 
-          <p class="footer-company-name">Copyright © 2021 <strong>StackBlocks</strong> All rights reserved</p>
+          <p class="footer-company-name">Copyright © 2023 <strong>StackBlocks</strong> All rights reserved</p>
       </div>
 
       <div class="footer-center">
-          <div>
+          <div id="kxj">
               <i class="fa fa-map-marker"></i>
               <p><span>Karimganj</span>
                   Assam</p>
@@ -544,11 +756,11 @@
 
           <div>
               <i class="fa fa-phone"></i>
-              <p>+916003408379</p>
+              <p>91+9395593877</p>
           </div>
           <div>
               <i class="fa fa-envelope"></i>
-              <p><a href="mailto:stackblocks23@gmail.com">stackblocks23@gmail.com</a></p>
+              <p><a href="mailto:sagar00001.co@gmail.com">StackBlocks23@gmail.com</a></p>
           </div>
       </div>
       <div class="footer-right">
@@ -564,7 +776,7 @@
           </div>
       </div>
   </footer>
-
+  <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -574,8 +786,39 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
   <script>
+    
+  //  var preloader = document.getElementById('context');
+  //  function load(){
+  //   preloader.style.display = 'none';
+    
+  //  }
+  
+  $(window).on('load', function(){
+    setTimeout(function(){
+      $(".main-load").fadeOut('slow');
+    }, 2000)
+  })
+   
+   
 
+   const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",() => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener(
+    "click",() => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+))
 
 
     var splide = new Splide('.splide', {
@@ -623,11 +866,57 @@
     }
 })
 var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      arrows: true,
+      loop:true,
+      autoplay: {
+       delay: 3000, // Delay between slides in milliseconds
+       disableOnInteraction: true, // Autoplay continues even when the user interacts with the carousel
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        
+        428:{
+            slidesPerView:1,
+            spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+
+    $(".readmore-btn").on('click', function(){
+        $(this).parent().toggleClass("showContent");
+
+        var replaceText = $(this).parent().hasClass("showContent") ? "See Less Features" : "See all Features";
+        $(this).text(replaceText);
+    });
+var swiper = new Swiper(".mySwiperr", {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
       
       slidesPerView: '2',
+      breakpoints:{
+        328:{
+            slidesPerView:'1.3',
+            
+        }
+      },
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
