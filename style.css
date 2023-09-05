@@ -1,2392 +1,938 @@
-@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-}
-body{
-    background-attachment: fixed;
-    background: url(./Frame\ 178.svg);
-    overflow-x: hidden;
-    background-repeat: no-repeat;
-    
-    background-size: cover;
-    
-    cursor: default;
-}
-.container1{
-    max-width:1180px;
-    margin-inline: auto;
-}
-.navbar{
-    
-    margin: 30px;
-    display: flex;
-    justify-content: space-between;
-    width:100%;
-    align-items: center;
-    
-}
-.navbar a{
-    color:white;
-}
-.navbar>img{
-    width: 270px;
-    margin-top: -13px;
-    margin-left: 83px;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.1/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-}
-.navbar .nav-links ul{
-    display: flex;
+</head>
 
-}
-.navbar .nav-links ul li{
-    margin: 0 20px;
-    opacity: 0.7;
-    list-style: none;
-    margin-top: 12px;
-}
-.nav-links ul li a{
-    position: relative;
-    
-    overflow: hidden;
-}
-.title{
-    justify-content:center;
-    text-align: center;
-    margin-top: 19%;
-    color: white;
-    font-size: 19px;
-    margin-left: -283px;
-    cursor: default;
-}   
-#hell{
-    color: #1770b5;
-    
-}
-.title-para{
-    margin-top: 12px;
-    margin-left: 431px;
-    opacity: 0.7;
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.title-para1{
-    opacity: 0.7;
-    margin-top: -2px;
-    font-size: 15px;
-    margin-left: 223px;
+<body >
+  <div class="main-load" onload="load()" id="context">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+</div>
 
-}
-.work{
-    float: right;
-    width: 27%;
-    margin-top: -12%;
-    /* margin-right: 9%; */
-}
-title>h1{
-    margin-right: -52%;
-}
-.work1{
-    float: right;
-    width: 5%;
-    margin-top: -19%;
-    margin-left: 80%;
-}
-/* .work1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:20%
-} */
-#hell1{
-    margin-left: 1px;
-}
-.line{
-    width:70%;
-    margin-left: 18%;
-    margin-top: 9%;
-    opacity: 0.6;
-}
-.block>img{
-    width:9%;
-    margin-top: 188px;
-}
-.textboss5{
-    margin-top: -4%;
-}
-/* .Features>h1{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: -15%;
-    margin-left: -29%;
-    text-decoration: none;
-    color: white;
-    font-size: 33px;
-} */
-.container1>h1{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 7%;
-    margin-left: -51%;
-    
-    text-decoration: none;
-    color: white;
-    font-size: 27px;
-}
-#hell3{
-    color: #1770b5;
-}
-.title-para3{
-    color: white;
-    margin-left: 36px;
-    margin-top: 23px;
-    opacity: 0.7;
-    font-size: 18px;
-}
-.card1{
-    /* width:1px;
-    height:20px; */
-    /* background-color: #333333; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25%;
-    margin-top: -153px;
-    cursor: default;
-    /* border-radius: 9px; */
-    
-}
-.card1 img{
-    width:243px
-}
-.card2{
-    /* width:1px;
-    height:20px; */
-    /* background-color: #333333; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 73%;
-    margin-top: -299px;
-    cursor: default;
-    /* border-radius: 9px; */
-    
-}
-.card2>img{
-    width:243px
-}
-.dev{
-    position: absolute;
-    margin-top: -234px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 79px;
-}
-.dev>img{
-    width:113px
-}
-.card-head{
-    color:white;
-    position: absolute;
-    margin-top: -74px;
-    margin-left: -37px;
-    font-size: 21px;
-}
-.card-bul{
-    position: absolute;
-    margin-top:96px; 
-    color:white;
-    opacity: 0.7; 
-    margin-left:23px;
-}
-.card-bul>li{
-    padding: 8px;
-    
-}
+  <div class="container1">
+  <header>
+    <nav class="navbar">
+       <a href="#" class="nav-branding"><img src="./Frame 177.png" width="234px"></a>
+       <ul class="nav-menu">
+           <li class="nav-item">
+               <a href="index.html" class="nav-link" id="link">Home</a>
+           </li>
+           <li class="nav-item">
+               <a href="#fea" class="nav-link" id="link">Features</a>
+           </li>
+           <li class="nav-item">
+               <a href="#rev" class="nav-link" id="link">Reviews</a>
+           </li>
+           <!-- <li class="nav-item">
+            <a href="#" class="nav-link" id="link">About Us</a>
+           </li> -->
+           <li class="nav-item">
+            <a href="#proj" class="nav-link" id="link">Projects</a>
+            </li>
+           <li class="nav-item" id="contu">
+               <a href="#" class="nav-link">Contact us</a>
+           </li>
+       </ul>
+       <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+       </div>
+    </nav>
+   </header>
+  </div>
+  <div class="container1  data-scroll-index = 1">
+    <!-- <div class="curve"> -->
+    <!-- <img src="./images/Ellipse 276.png"> -->
+    <!-- </div> -->
+    <div class="title">
+      <!-- <img class = "work" src="images/12780654_5052907 1.png" alt="">
+          <img class ="work1" src="images/Frame 174.png"> -->
+      <h1 id="tile">
+        <span id="hell">Unleashing</span> the Power of<br><span id="hell1">Design and Technology.</span>
+        
+
+      </h1>
+      <img class="work" src="images/12780654_5052907 1.png" alt="">
+      <!-- <img class = "work" src="images/12780654_5052907 1.png" alt="">
+          <img class ="work1" src="images/Frame 174.png"> -->
+      <p class="title-para" id=creat>
+        We create beautiful, functional, and user-friendly websites that will
+      </p>
+      <p class="title-para1">
+        help you achieve your business goals
+      </p>
 
 
-.dev1{
-    position: absolute;
-    margin-top: -214px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 79px;
-}
-.dev1>img{
-    width:113px
-}
-.card-bul1{
-    position: absolute;
-    margin-top:112px;
-    color:white;
-    opacity: 0.7;
-    margin-left: 23px;
-}
-.card-bul1>li{
-    padding: 5px;
-}
-.card-head1{
-    color:white;
-    position: absolute;
-    margin-top: -74px;
-    margin-left: -77px;
-    font-size: 21px;
-}
-.sit{
-    width:373px;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-left: -34px;
-    margin-bottom: 123px;
-    margin-top: -1%;
-}
-.card3{
-    /* width:1px;
-    height:20px; */
-    /* background-color: #333333; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 4%;
-    margin-top: -428px;
-    cursor: default;
-    /* border-radius: 9px; */
-    
-}
-.card3>img{
-    width:243px
-}
-.card4{
-    /* width:1px;
-    height:20px; */
-    /* background-color: #333333; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 57%;
-    margin-top: -301px;
-    cursor: default;
-    /* border-radius: 9px; */
-    
-}
-.card4>img{
-    width:243px
-}
-.card-head2{
-    color:white;
-    position: absolute;
-    margin-top: -74px;
-    margin-left: -41px;
-    font-size: 21px;
-}
-.card-bul2{
-    position: absolute;
-    margin-top:96px;
-    color:white;
-    margin-left:28px;
-    opacity: 0.7;
-    font-size: 14px;
-}
-.card-bul2>li{
-    padding: 9px;
-}
+    </div>
+    <img class="line" src="images/Line 69.png">
+  </div>
+  <section class="Features" id="fea">
+    <div class="container1 ">
 
-.card-head3{
-    color:white;
-    position: absolute;
-    margin-top: -74px;
-    margin-left: -77px;
-    font-size: 21px;
-}
-.card-bul3{
-    position: absolute;
-    margin-top:96px;
-    color:white;
-    opacity: 0.7;
-}
-.card-bul3>li{
-    padding: 5px;
-}
-.dev2{
-    position: absolute;
-    margin-top: -214px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 79px;
-}
-.dev2>img{
-    width:113px
-}
-.dev3{
-    position: absolute;
-    margin-top: -269px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 79px;
-}
-.dev3>img{
-    width:133px
-}
-.real-strength{
-    background-color:#1770b5 ; 
-    border: none;
-    color: white;
-    padding: 3px 11px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 28px;
-    margin-top: 133px;
-    font-size: 23px;
-    font-weight:500;
-    border-radius:4px;
-  }
-.progress ul{
-    margin-top: 83px;
-}
-.progress li{
-    list-style-type: none;
-    margin: 31px 0;
-    position: relative;
-}
-.progress li::before{
-    content:"";
-    position: absolute;
-    background-color: white;
-    width:364px;
-    height:3px;
-    top: calc(100% + 5px);
-    left:0;
+      <div class="fea-main">
+      <h1 class="fea-head" id="feau">
+        <span id="hell3">Features</span> We Provide To Our Customers
+      </h1>
+      <p class="title-para3" id="tileu">
+        Our website making company offers cutting-edge features<br>including responsive design, intuitive navigation,
+        SEO optimization,<br> customizable templates, e-commerce integration, secure hosting,<br> social media
+        integration, and seamless user experience.
+      </p>
+      </div>
+      <div class="card-1">
+        <div class="card1" id="card1">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head">Web development</h3>
+          <ul class="card-bul">
+            <li>Responsive design</li>
+            <li>Customizable templates</li>
+            <li>User-friendly interface</li>
+            <li>SEO optimization</li>
+          </ul>
+          <div class="dev">
+            <img src="images/noun-web-development-1849639.png">
+          </div>
 
-}
-.progress li::after{
-    content:"";
-    position: absolute;
-    background-color: #407BFF;
-    width: 0;
-    height:3px;
-    top: calc(100% + 5px);
-    left:0;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    /* animation-iteration-count: infinite;
-    animation-direction: forward; */
-    animation-fill-mode: forwards;
-}
-.progress li.front1::after{
-    animation-name: front1;
-}
-@keyframes front1{
-    to{
-        width: 360px;
-    }
-}
-.progress1 ul{
-    margin-left: 642px;
-    margin-top: -18.1%;
-    
-}
-.progress1 ul li{
-    color:white;
-}
-.progress1 li{
-    list-style-type: none;
-    margin: 31px 0;
-    position: relative;
-}
-.progress1 li::before{
-    content:"";
-    position: absolute;
-    background-color: white;
-    width:354px;
-    height:3px;
-    top: calc(100% + 5px);
-    left:0;
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="card2">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head1">UI/UX Design</h3>
+          <ul class="card-bul1">
+            <li>Seamless user flow design</li>
+            <li>Visual hierarchy design</li>
+            <li>User-centered design<br>approach</li>
+            <li>Interactive prototyping for<br>validation</li>
+          </ul>
+          <div class="dev1">
+            <img src="images/noun-ui-ux-design-4900096.png">
+          </div>
+        </div>
+      </div>
+      <img class="sit" src="images/Character.png">
+      <div class="card-3">
+        <div class="card3">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head2">App Development</h3>
+          <ul class="card-bul2">
+            <li>Cross-platform compatibility</li>
+            <li>Offline functionality support</li>
+            <li>Secure user authentication</li>
+            <li>Real-time data synchronization</li>
+          </ul>
+          <div class="dev2">
+            <img src="images/noun-ui-ux-design-4900096.png">
+          </div>
+        </div>
+      </div>
+      <div class="card-4">
+        <div class="card4">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head3">Graphic Design</h3>
+          <ul class="card-bul3">
+            <li>Logo design</li>
+            <li>Infographic design</li>
+            <li>Packaging design</li>
+            <li>Layout and composition<br>design</li>
+          </ul>
+          <div class="dev3">
+            <img src="images/Group (1).png">
+          </div>
+        </div>
+      </div>
+      <!-- <img class="ring" src="images/Vector.png"> -->
+    </div>
+  </section>
+  <section class="team-strength">
+    <div class="container1 ">
+      <p class="real-strength">Team strength</p>
+      <div class="progress">
+        <ul>
+          <li class="front1">FRONTEND</li>
+          <li class="front2">UI/UX</li>
+          <li class="front3">WEB APPLICATION</li>
+          <li class="front4">APP (ANDROID/IOS)</li>
+        </ul>
 
-}
-.progress1 li::after{
-    content:"";
-    position: absolute;
-    background-color: #407BFF;
-    width: 0;
-    height:3px;
-    top: calc(100% + 5px);
-    left:0;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    /* animation-iteration-count: infinite;
-    animation-direction: forward; */
-    animation-fill-mode: forwards;
-}
-.progress1 li.back1::after{
-    animation-name: back1;
-}
-@keyframes back1{
-    to{
-        width: 264px;
-    }
-}
-.progress ul{
-    margin-left: 28px;
-}
-.progress ul li{
-    color:white;
-}
-.level{
-    color:white;
-    margin: 3px 0px;
-}
-.level ul{
-    margin-left: 413px;
-    margin-top: -15.7%;
-}
-.level li{
-  margin: 31px 0px;
-  list-style-type: none;
-}
-.level1{
-    color:white;
-    margin: 3px 0px;
-}
-.level1 ul{
-    margin-left: 1006px;
-    margin-top: -11.5%;
-}
-.level1 li{
-  margin: 31px 0px;
-  list-style-type: none;
-}
-.video-title{
-    justify-content: center;
-    text-align: center;
-    font-size: 34px;
-    color:white;
-    margin-top: 57px;
-    
-}
-.real-video{
-   margin-left: 124px;
-   margin-top: 35%;
-   
-}
-.real-video>iframe{
-    
-    margin-top: -35%;
-}
-.why-title{
-    text-align: center;
-    font-size: 37px;
-    color: white;
-    margin-top: 134px;
-    margin-right: -34px;
-}
-.why-curve{
-    width: 434px;
-    margin-left: 1210px;
-    margin-top: -534px;
-}
-.why-dots{
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin-left:35px;
-    margin-top: 5%;
-    opacity: 0.7;
-    display: flex;
-    /* justify-content: space-between; */
-    gap:373px;
-    font-size: 21px
-   
-    
-}
+      </div>
+      <div class="level">
+        <ul>
+          <li>Advance</li>
+          <li>Advance</li>
+          <li>Intermediate- Advance</li>
+          <li>Advance</li>
+        </ul>
+      </div>
 
-.why-bull2{
-    margin-top: 33px;
-}
-.card-bul li::marker{
-    color: #407BFF;
-}
-.card-bul1 li::marker{
-    color: #407BFF;
-}
-.card-bul2 li::marker{
-    color: #407BFF;
-}
-.card-bul3 li::marker{
-    color: #407BFF;
-}
-.why-bull>li{
-    padding: 21px;
-    
-    
-}
-.why-bull li::marker{
-    color: #1770B5;
-}
-.why-bull2 li::marker{
-    color: #1770B5;
-}
-.why-dots2{
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin-left:45px;
-    margin-top: 23px;
-    opacity: 0.7;
-}
-.why-bull2>li{
-    padding-bottom: 41px;
-}
+      <div class="progress1">
+        <ul>
+          <li class="back1">BACKEND</li>
+          <li class="back2">MOTION GRAPHICS</li>
+          <li class="back3">LOGO/ GRAPHIC DESIGN</li>
 
-.team-title{
-    text-align: center;
-    font-size: 37px;
-    color: white;
-    padding-top: -8%;
-}
-.card{
-    background-color: #d9d9d9;
-    width:279px;
-    height:354px;
-    border-radius: 7px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    
-}
-.wrapper1{
-    margin-left: 345px;
-    position: relative;
-    margin-top: -273px;
-    justify-content: center;
-    display: flex;
-    
-    align-items: center;
-    gap:54px;
-    width:60%; 
-    
-    
-}
-.cofo{
-    margin-top: 154%;
-    margin-left: -13%;
-    color: white;
-    font-size: 21px;
-}
-.paru{
-    margin-top: 174%;
-    color: white;
-    margin-left: -35%;
-    opacity: 0.7;
-}
-.stack{
-    width: 123px;
-    margin-top: 13%;
-    
-}
-.line3{
-    margin-top: 7%;
-    width:60%;
-    margin-left: 354px;
-}
-.team-dis{
-    width: 614px;
-    margin-top: 5%;
-    margin-left: 14px;
-}
+        </ul>
 
-.dis-title{
-    margin-top: -31%;
-    margin-left: 815px;
-    color: white;
-    font-size: 38px;
-    position: fixed;
-}
-.discussion>p{
-    color:white;
-    opacity: 0.7;
-    margin-left: 49%;
-    margin-top: 2%;
-    font-size: 20px;
-}
-.cv-btn>p{
-    color:white;
-    
-}
-.cv-btn{
-    display: inline-flex;
-    background-color: transparent;
-    border: 2px solid #1770b5;
-    margin-left: 59%;
-    margin-top: 6%;
-    padding: 9px 19px;
-    border-radius: 9px;
-}
-.dis-curve{
-    display: flex;
-    margin-left:1325px;
-    width:313px;
-    margin-top: -28%;
-}
-.cus-title{
-    color: white;
-    text-align: center;
-    justify-content: center;
-    font-size: 38px;
-}
-.cus1{
-    margin-top: 1%;
-    width:427px;
-    margin-left: 123px;
-}
-.cus2{
-    position: absolute;
-    margin-top: -1px;
-    width:427px;
-    margin-left: 33px;
-}
-.cus3{
-    margin-top: 2%;
-    width:427px;
-    margin-left: 499px;
-}
-.cusses{
-    margin-top: 123px;
-}
-.line4{
-    margin-top: 73px;
-    width:87%;
-    align-items: center;
-    justify-content:center ;
-    margin-left: 95px;
-}
-.foot-img{
-    margin-top: 9%;
-    width: 70%;
-    margin-left: 15%;
-}
-.foot-para{
-    color:white;
-    position: relative;
-    top:-90px;
-    left: 273px;
-    font-size: 23px;
-}
-.foot>input{
-    margin-left: 66%;
-    margin-top: -8%;
-    position: absolute;
-    width:213px;
-    height: 46px;
-    border-radius: 4px;
-}
-.enter{
-    
-    margin-left: 78%;
-    margin-top: -8%; 
-    background-color: #407BFF;
-    display: inline-flex;
-    padding: 12px 19px;
-    position: absolute;
-    border-radius: 4px;
-}
-.ent{
-    
-    color:white;
-}
-.foot-email{
-    position: absolute;
-    margin-top: -10%;
-    margin-left: 67%;
-    color: #3B70E3;
-}
-.add-main{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    color: #1770b5;
-    font-size: 21px;
-}
-.add{
-    margin-left: 56px;
-}
-.add1{
-    margin-left: -334px;
-}
-.add2{
-    margin-right:74px ;
-}
-.add-main2{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    color: white;
-    opacity: 0.7;
-}
-.add3{
-    margin-left: 56px;
-}
-.add4{
-    margin-right: 60.2%;
-    margin-top: 16px;
-}
-.addimg1{
-    width: 31px;
-}
-.add-img{
-    display: flex;
-    justify-content: space-between;
-    width:9%;
-    margin-left: 76%;
-    margin-top: -47px;
-    
-}
-.line-last{
-    width:92%;
-    margin-left: 63px;
-    margin-top: 54px;
-}
-.last-img{
-    text-align: center;
-    width: 273px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 40%;
-    margin-top: 24px;
-}
-.last-title{
-    color: white;
-    margin-top: 24px;
-    position: absolute;
-    margin-left: 59px;
+      </div>
+      <div class="level1">
+        <ul>
+          <li>Intermediate- Advance</li>
+          <li>Intermediate- Advance</li>
+          <li>Advance</li>
 
-}
-.last-nav{
-    background-color: #1770b5;
-    margin-top: -6px;
-    justify-content:center; 
-    padding: 5px 8px;
-    border-radius: 4px;
-    position: absolute;
-}
-/* .nav-links>a:after{
-    content:"";
-    display: block;
-    height:4px;
-    width:100%;
-    background-color: #3B70E3;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}             
-.nav-links>a:hover:after{
-    transform: scaleX(1);
-} */
-.img{
-    width:284px;
-}
-img{
-    max-width: 100%;
-}
-.splide_wrapper{
-    max-width: 940px;
-    margin-top: 16%;
-    margin-left: -23%;
-}
-/* .splide__arrow--prev{
-    display: none;
-} */
-.splide_wrapper .splide__arrow{
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color:white;
-    border: 1px solid white;
-    right:-3%
+        </ul>
+      </div>
+      <img class="line" id="liney" src="images/Line 69.png">
 
-}
-.splide_wrapper .splide__pagination{
-    bottom:-1.5rem;
-}
-.splide_wrapper .splide__pagination__page.is-active{
-    background-color: #3B70E3;
-    
-}
-.text1{
-    text-transform: capitalize;
-    margin-left: -9%;
-    margin-bottom: -13%;
-    font-size: 34px;
-    padding: 30px;
-    color: white;
-    margin-top: 5%;
-  }
-  .blue {
-    color: #3B70E3;
-  }
-  .team-title{
-    text-align: center;
-    font-size: 37px;
-    color: white;
-    margin-top: 17%;
-}
+    </div>
+  </section>
+  <!-- <section class="video">
+    <div class="container1 ">
+      <div class="textboss2">
+      <h1 class="video-title">
+        Know More About Us Through <span id="hell">Visuals</span>
+      </h1>
+      </div>
+      <div class="real-video">
 
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/0lADveyC6gs"
+          title="I'm Losing My Mind Now! *ASUS ROG Ally*" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
 
-.card{
-    background-color: #d9d9d9;
-    width:279px;
-    height:354px;
-    border-radius: 7px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    
-}
-.wrapper1{
-    margin-left: 13%;
-    position: relative;
-    margin-top: 73px;
-    justify-content: center;
-    display: flex;
-    
-    align-items: center;
-    gap:54px;
-    width:80%; 
-    
-    
-}
-.cofo{
-    margin-top: 154%;
-    margin-left: -13%;
-    color: white;
-    font-size: 21px;
-}
-.paru{
-    margin-top: 174%;
-    color: white;
-    margin-left: -35%;
-    opacity: 0.7;
-}
-.team-dis{
-    width: 614px;
-    margin-top: 15%;
-    margin-left: -9%;
-}
-.line3{
-    margin-top: 7%;
-    width:76%;
-    margin-left: 154px;
-}
-.dis-title{
-    margin-top: -35%;
-    margin-left: 35.4%;
-    position: absolute;
-    color: white;
-    font-size: 41px;
-}
-.dis-title2{
-    color:white;
-    opacity: 0.7;
-    margin-left: 44.7%;
-    margin-top: -37%;
-    font-size: 20px;
-    position: relative;
-}
-.cv-btn>p{
-    color:white;
-    
-}
-.cv-btn{
-    display: inline-flex;
-    background-color: transparent;
-    border: 2px solid #1770b5;
-    margin-left: 59%;
-    margin-top: 6%;
-    padding: 9px 19px;
-    border-radius: 9px;
-}
-.cus-title{
-    color: white;
-    text-align: center;
-    justify-content: center;
-    font-size: 38px;
-    
-    margin-top: 21%;
-}
-.cus1{
-    margin-top: 5%;
-    width:427px;
-    margin-left: -113px;
-}
-.cus2{
-    
-    margin-top: 1%;
-    width:427px;
-    margin-left: 33px;
-}
-.cus3{
-    position: absolute;
-    margin-top: 56px;
-    width:427px;
-    margin-left: 499px;
-}
-.cusses{
-    margin-top: 123px;
-    margin-left: 25px;
-}
-.line4{
-    margin-top: 73px;
-    width:100%;
-    align-items: center;
-    justify-content:center ;
-    margin-left: -1%;
-}
-.addboss{
-    margin-top: 5%;
-}
-.foot-img{
-    margin-top: 9%;
-    width: 87%;
-    margin-left: 5%;
-}
-.foot-para{
-    color:white;
-    position: relative;
-    top:-90px;
-    left: 93px;
-    font-size: 23px;
-}
-.foot>input{
-    margin-left: 51%;
-    margin-top: -8%;
-    
-    width:213px;
-    height: 46px;
-    border-radius: 4px;
-}
-.Enter{
-    
-    background-color: #1770B5;
-    border: none;
-    color: white;
-    font-weight: bold;
-    padding: 13px 19px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 16px;
-    border-radius: 7px;
-    margin-left: 66%;
-    margin-top: -8%;
-    position: absolute;
-}
+      </div>
+    </div>
 
-.foot-email{
-    
-    margin-top: -10%;
-    margin-left: 51.3%;
-    color: #3B70E3;
-}
-.add-main{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    color: #1770b5;
-    font-size: 21px;
-    margin-left: -12%;
-}
-.add{
-    margin-left: 56px;
-}
-.add1{
-    margin-left: -34px;
-}
-.add2{
-    margin-right:-14px ;
-}
-.add-main2{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    color: white;
-    opacity: 0.7;
-}
-.add3{
-    margin-left: -84px;
-}
-.add4{
-    margin-right: 54.2%;
-    margin-top: 16px;
-}
-.addimg1{
-    width: 31px;
-}
-.add-img{
-    display: flex;
-    justify-content: space-between;
-    width:9%;
-    margin-left: 76%;
-    margin-top: -47px;
-    
-}
-.line-last{
-    width:92%;
-    margin-left: 63px;
-    margin-top: 54px;
-}
-.last-img{
-    text-align: center;
-    width: 273px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 40%;
-    margin-top: 24px;
-}
-.last-title{
-    color: white;
-    margin-top: 24px;
-   
-    margin-left: -9%;
-    
-}
-.lastboss{
-    margin-bottom: 1%;
-}
-.last-nav{
-    background-color: #1770b5;
-    margin-top: 6px;
-    justify-content:center; 
-    padding: 5px 8px;
-    border-radius: 4px;
-    position: absolute;
-}
-.price-title{
-    color: black;
-    margin-top: 8%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 27px;
-    
-  }
-  .pricecard{
-      background-color: white;
-      height: 600px;
-      width: 340px;
-      margin-top:6%;
-      border-radius: 14px;
+  </section> -->
+  <section>
+    <div class="container1">
+      <div class="price-title">
+      <h1> Our <span id = "hell">Pricing</span></h1>
       
-  }
-  .price-cont1{
-      background-color: #3b70e3;
-      height: 220px;
-      border-radius: 100% 0% 100% 0% / 0% 27% 73% 100% ;
-  }
-  .pricecard .price-cont1>h1{
-    color: white;
-    font-size: 43px;
-    margin-left: 13%;
-    padding-top: 64px;
+      </div>
+      <p class="price-para">Affordable web development pricing, delivering quality solutions for your business.</p>
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="box1">
+              <div class="swiper-slide">
+                  <div class="box1">
+                      <img src="./Group 9020 (1).png">
+                      
+                      <div class="ul">
+                          
+                          
+                          <li>5 Pages
+                          </li>
+                          <li>Static Site
+                          </li>
+                          <li>+5000 Rs for Table Reservation System</li>
+                          
+                          <li>WhatsApp API Integration
+                          </li>
+                          <li>Basic Security
+                          </li>
+                          <li>800 Rs. Per customization
+                          </li>
+                          
+                          <li>1 Email Account
+                          </li>
+              
+                          <li>Free POS Software
+                          </li>
+                          
+                          <li>3,000 Monthly Maintenance
+                          </li>
+                          
+                      </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide" >
+                  <div class="box1">
+                    <img src="./Frame 1.png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Static Site
+                        </li>
+                        <li>+5000 Rs for Table Reservation System</li>
+                        
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Cloud Security
+                        </li>
+                        <li>First 2 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>4 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="box1">
+                    <img src="./Group 9019 (1).png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Dynamic website
+                        </li>
+                        <li>+5000 Rs for Table Reservation System</li>
+                        <li>Free QR Code Menu System
+                        </li>
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Imunify360 Firewall + Cloud Security
+                        </li>
+                        <li>First 3 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>4 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="box1">
+                    <img src="./Group 9023 (3).png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Dynamic website
+                        </li>
+                        <li>SMS Gateway Integration
+                        </li>
+                        <li>+5000 Rs for Table Reservation System
+                        </li>
+                        <li>Free QR Code Menu System
+                        </li>
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Imunify360 Firewall + Cloud Security
+                        </li>
+                        <li>First 3 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>5 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box1">
+                  <img src="./Group 9025 (1).png">
+                    
+                  <div class="ul">
+                      <li>3-Installment Payment Method</li>
+                      
+                      <li>20 Pages
+                      </li>
+                      <li>Gallery for Website
+                      </li>
+                      <li>Dynamic website
+                      </li>
+                      <li>SMS Gateway Integration
+                      </li>
+                      <li>+5000 Rs for Table Reservation System
+                      </li>
+                      <li>Free QR Code Menu System
+                      </li>
+                      <li>WhatsApp API Integration
+                      </li>
+                      <li>AWS Firewall + Cloud Security
+                      </li>
+                      <li>First 6 Customization for free
+                      </li>
+                      <li>800 Rs. Per customization
+                      </li>
+                      <li>10 Email Accounts
+                      </li>
+          
+                      <li>Free POS Software
+                      </li>
+                      
+                      <li>3,000 Monthly Maintenance
+                      </li>
+                      
+                  </div>
+                    <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+  </section>
+  <!-- <section>
+    <div class="container1">
+        <div class="price-title">
+            <h1>Our<span id="hell"> Pricing</span></h1>
+        </div>
+        <div class="price-wrap">
+         <div class="pricecard">
+            <div class="price-cont1">
+                 <h1>Basic</h1>
+                <div class="price-cont2">
+                    
+                </div>
+            </div>
+         </div>
+         <div class="pricecard">
+          <div class="price-cont1">
+               <h1>Pro</h1>
+              <div class="price-cont2">
+                  
+              </div>
+          </div>
+       </div>
+       <div class="pricecard">
+        <div class="price-cont1">
+             <h1>Premium</h1>
+            <div class="price-cont2">
+                
+            </div>
+        </div>
+     </div>
+    </div>
+    </div>
+  </section> -->
+  
+  <section>
+    <div class="container1">
+      <div class="textboss">
+      <h1 class="text1">
+        some of the
+        <span class="blue">brands</span>
+        we have worked with
+      </h1>
+      </div>
+      <div class="splide_wrapper">
+        <div class="splide">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1.png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="./image 1 (5).png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1 (2).png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1 (3).png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1 (4).png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="working">
+        <img src="images/Frame 189.png" alt="">
+      </div>
+    </div>
+   
+  </section>
+  <section class="why">
+    <div class="container1 ">
+      <div class="titlemax">
+        <h1 class="why-title" id="why">
+          Why <span id="hell">Choose</span> Us?
+        </h1>
+        <p>Discover client experiences, their words echoing our commitment to exceptional service and satisfaction.</p>
+      </div>
+      <div class="why-dots">
+        <ul class="why-bull">
+          <li>Collaboration and Communication</li>
+          <li>Quality Assurance</li>
+          <li>Timely Delivery</li>
+          <li>Ongoing Support and Maintenance</li>
+        </ul>
+
+
+        <ul class="why-bull2">
+          <li>Expertise and Experience</li>
+          <li>Customized Solutions</li>
+          <li>Innovative Design and Development</li>
+          <li>User-Centric Approach</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container1">
+      <div class="textboss5">
+      <h1 class="team-title">
+        Meet Our <span id="hell">Team</span>
+      </h1>
+      <p>Our team delivers tailored solutions and exceptional service for your needs.</p>
+     </div>
+    </div>
+    <div class="container1">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="teambox">
+            <img src="./Group 4.svg">
+            <!-- <h3>Kunal <span id="hell"></span></h3>
+            <p>Co-Founder,UI/UX Designer</p> -->
+          </div>
+        </div>
+        <div class="item">
+          <div class="teambox">
+            <img src="./Group 5.svg">
+            <!-- <h3>Subhajit <span id="hell"></span></h3>
+            <p>Co-Founder,Frontend Developer</p> -->
+          </div>
+        </div>
+        <div class="item">
+          <div class="teambox">
+            <img src="./Group 6.svg">
+            <!-- <h3>Saurojit <span id="hell"></span></h3>
+            <p>Co-Founder,Backend Developer</p> -->
+          </div>
+        </div>
+       
+    </div>
+    </div>
+      
+      </div>
+      <img class="line3" src="images/Line 69.png">
+    </div>
+  </section>
+  <section>
+    <div class="container1">
+      <div class="wrapper">
+        <h1 class="section-header" id="proj">Our <span id="hell">Projects</span></h1>
+        <div class="main-content">
+            <div class="box">
+                <img src="images/image 27.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Olicha</h2>
+                    <p>Olicha: Where luxury meets culinary artistry. A harmonious restaurant where blend of taste and comfort awaits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/image 28.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>ByteBlogerbase</h2>
+                    <p>Discover a new way to share your thoughts with our innovative blog app. Express yourself through seamless writing, captivating visuals, and interactive engagement. Elevate your blogging experience today.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/image 30.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Rajib Kar Retail Shop</h2>
+                    <p>A store where you can buy every groceries at a suitable price </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/image 321.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Maa Kali Body Point</h2>
+                    <p>Unlock your potential at Maa Kali Body Point gym, where sweat meets determination. Join us on a journey to a healthier, stronger you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/image 322.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Encoderspro</h2>
+                    <p>ENCODERSPRO Provides Courses related to Cybersecurity, Full-Stack Development, Networking & Advanced Bug Bounty with the best experts in India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/WhatsApp Image 2023-08-17 at 11.09.56 AM.jpeg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Landing Page Templates</h2>
+                    <p>Get awesome , handcrafted landing page templates at a suitable price</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!-- <section>
+    <div class="container1">
+      <img id="disid" src="images/Team Discussion.png">
+      <p id="going">Get a chance to <span id="hell"> work with us!</span></p>
+      <p id="going2">Connect To us Through Our Social Media Handles Or Directly Mail Us At </p>
+      <button id="going3"><a href="#">Share your cv / portfolio</a></button>
+  </div>
+
+  </section> -->
+  <section id="rev">
+    <div class="container1 ">
+      <div class="curse">
+        <h1 class="cus-title">
+          What Our Customer <span id="hell">Say About Us?</span>
+
+        </h1>
+        <p>Hear from satisfied clients about their experiences, showcasing our commitment to excellence.</p>
+        <div class="container1">
+          <div class="swiper mySwiperr" id="custo">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+      </div>
+        <img class="line4" src="images/Line 69.png">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- <section >
+    <div class="container1 ">
+      <div class="foot">
+        <img class="foot-img" src="images/Rectangle 406.png">
+        <h3 class="foot-para">Connect To us Through Our Social Media Handles<br>Or Directly <span id="hell">Mail Us
+            At</span></h3>
+        
+            <input name="" type="text" class="input-field" required="required">
+        <h3 class="foot-email">
+          StackBlocks23@gmail.com
+        </h3>
+        <button class="Enter" type="submit" name="signup_submit" >Enter</button>
+      </div>
+      <div class="addboss">
+      <div class="add-main">
+        <h3 class="add">Address</h3>
+        <h3 class="add1">Contact Us</h3>
+        <h3 class="add2">Connect Us At Our Social Media Page</h3>
+      </div>
+      <div class="add-main2">
+        <h3 class="add3">Karimganj-Assam-India<br>788710</h3>
+        <h3 class="add4">Instagram - @Stack Blocks<br>91+9395593877<br>91+7086482787</h3>
+      </div>
+      <div class="add-img">
+        <img class="addimg1" src="images/twitter.png">
+        <img class="addimg1" src="images/instagram (4).png">
+        <img class="addimg1" src="images/linkedin (2).png">
+      </div>
+      <img class="line-last" src="images/Line 69.png">
+    </div>
+  </div>
+  </section>
+   <section>
+      <div class="container1 ">
+      <div class="lastboss">
+      <h3 class="last-title">©2023 StackBlocks.All rights reserved.</h3>
+      <img class="last-img" src="images/Frame 179.png">
+      </div>
+    </div>
+    </section> -->
     
+    <footer class="footer-distributed">
 
-  }
-  .price-wrap{
-    display: flex;
-    justify-content: space-around;
+      <div class="footer-left">
+          <img src="images/Frame 179.png" alt="">
 
-  }
-  .teambox{
-    width: 311px;
-    background-color: transparent;
-    height: 383px;
-}
-.teambox>h3{
-    margin-top: 7px;
-    margin-left: 13px;
-    color: white;
-}
-.teambox>p{
-    margin-left: 13px;
-    color: white;
-}
-.teambox>img{
-    height: 323px;
-}
-.item{
-    margin-top: 11%;
-    margin-left: 11%;
-}
-.owl-dots{
-    bottom: 2rem !important;
-     
-}
-.owl-dot.active span{
-    background-color: #18619a !important;
+          <p class="footer-links">
+              
+          </p>
 
-}
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 12%;
-  }
+          <p class="footer-company-name">Copyright © 2023 <strong>StackBlocks</strong> All rights reserved</p>
+      </div>
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
-    filter:blur(4px);
+      <div class="footer-center">
+          <div id="kxj">
+              <i class="fa fa-map-marker"></i>
+              <p><span>Karimganj</span>
+                  Assam</p>
+          </div>
+
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>91+9395593877</p>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:sagar00001.co@gmail.com">StackBlocks23@gmail.com</a></p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>About the company</span>
+              <strong>Elevate</strong> your online presence with our agency's expert services. We craft immersive digital experiences that merge creativity with cutting-edge technology. From sleek designs to seamless functionality, we bring your vision to life.
+          <div class="footer-icons">
+              
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="https://instagram.com/stack_blocks?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"><i class="fa fa-linkedin"></i></a>
+              
+          </div>
+      </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+  <script>
     
-    border-radius: 10px;
-  }
-  .swiper-slide-active{
-    filter:blur(0px);
+  //  var preloader = document.getElementById('context');
+  //  function load(){
+  //   preloader.style.display = 'none';
     
-  }
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-  .swiper-3d .swiper-slide-shadow-left,
-  .swiper-3d .swiper-slide-shadow-right{
-       background-image: none;
-  }
+  //  }
+  
+  $(window).on('load', function(){
+    setTimeout(function(){
+      $(".main-load").fadeOut('slow');
+    }, 2000)
+  })
+   
+   
 
-  .fea-main{
-    color: white;
-    margin-top: 4%;
-  }
-  .fea-main>h1{
-    margin-left: 3%;
-  }
-  .working{
-    margin-left: 63%;
-    margin-top: -22%;
-    
-  }
-  .working>img{
-    width:678%
-  }
-  .nav-toggle{
-    margin-left: 112%;
-    margin-top: -12%;
-  }
-  .wrapper{
-    width: 80%;
-    padding: 30px 0;
-    text-align: center;
-}
-.section-header{
-    
-    line-height: 70px;
-    padding-bottom: 30px;
-    font-size: 50px;
-    color: white;
-    letter-spacing: 2px;
-    
-}
-.wrapper{
-    margin-left: 9%;
-}
-.main-content{
-    margin-top: 9%;
-}
-.content {
-  padding: 10%;
-}
-.content h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: #1770b5;
-}
-.content p {
-  line-height: 1.5;
-  color: black;
-}
-.main-content{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-main-content-gap: 25px;
-    grid-column-gap: 15px;
-}
-.main-content .box{
-    position: relative;
-    cursor: pointer;
-    margin-bottom: 15px;
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-    height: 250px;
-    overflow: hidden;    
-}
-.main-content .box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5px;
-    height: 100%;
-    transition: all 0.3s ease-in-out;
-}
-.main-content .box:hover:before{
-    top: 0;
-    right: calc(100% - 5px);
-    z-index: 10;
-}
-.main-content .box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.main-content .box .img-text {
-	position: absolute;
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(255,255,255,0.9);
-	width: 100%;
-	height: 100%;
-	top: 0;
-	right: 100%;
-	transition: all 0.5s ease-in-out;	
-}
-.main-content .box:hover .img-text{
-    top: 0;
-    right: 0;
-}
+   const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-footer {
-    position: fixed;
-    bottom: 0;
-}
+hamburger.addEventListener("click",() => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
-@media (max-height:800px) {
-    footer {
-        position: static;
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener(
+    "click",() => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
     }
-    header {
-        padding-top: 40px;
-    }
-}
-
-.footer-distributed {
-    background-color: #2d2a30;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
-    margin-top: 80px;
-}
-
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left {
-    width: 30%;
-}
-
-.footer-distributed h3 {
-    color: #ffffff;
-    font: normal 36px 'Cookie', cursive;
-    margin: 0;
-}
+))
 
 
-.footer-distributed h3 span {
-    color: #e0ac1c;
-}
+    var splide = new Splide('.splide', {
+      perPage: 3,
+      perMove: 1,
+      gap: '0.3rem',
+      arrows: false,
+      type: 'loop',
+      drag: 'free',
+      snap: true,
+      
+      autoplay: true,
+      breakpoints: {
+        640: {
+          perPage: 2,
+          gap: '.7rem',
 
-/* Footer links */
+        },
+        480: {
+          perPage: 3,
+          gap: '6rem',
 
-.footer-distributed .footer-links {
-    color: #ffffff;
-    margin: 20px 0 12px;
-}
+        },
+      },
+    });
 
-.footer-distributed .footer-links a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-}
+    splide.mount();
 
-.footer-distributed .footer-company-name {
-    color: #8f9296;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center {
-    width: 35%;
-}
-
-.footer-distributed .footer-center i {
-    background-color: #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-    font-size: 17px;
-    line-height: 38px;
-}
-
-.footer-distributed .footer-center p {
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin: 0;
-}
-
-.footer-distributed .footer-center p span {
-    display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
-}
-
-.footer-distributed .footer-center p a {
-    color: white;
-    text-decoration: none;
-    ;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-    width: 30%;
-}
-
-.footer-distributed .footer-company-about {
-    line-height: 20px;
-    color: #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-}
-
-.footer-distributed .footer-company-about span {
-    display: block;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons {
-    margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: #33383b;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-}
-
-.footer-distributed .footer-icons a:hover {
-    background-color: #3F71EA;
-}
-
-.footer-links a:hover {
-    color: #3F71EA;
-}
-.footer-left>img{
-   width:323px;
-}
-
-@media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-    .footer-distributed .footer-center i {
-        margin-left: 0;
-    }
-}       
-        
-
-        
-@media (max-width:991px) {
-    .nav-toggle {
-        display: block;
-        margin-right:-10%;
-   }
-   .nav-links {
-    position: absolute;
-    background-color: rgb(212, 212, 212);
-    left: -100%;
-    top: 100%;
-    width: 100%;
-    padding-block: 20px;
-    transition: 0.2s ease-in-out;
-}
-.nav-links.active {
-  left:0;
- }
- .main-nav {
-    overflow: initial;
-}
-.nav-links ul {
-    flex-direction:column;
-}
-    .nav-links ul{
-        display: none;
-    }
-    .navbar{
-        margin-left: -64px;
-    }
-    .title-para{
-        margin-left: 28%;
-    }
-    .title-para1{
-        margin-left: 13.3%;
-    }
-    .title>h1{
-        margin-top: -4%;
-        margin-left: -2%;
-    }
-    .work{
-        width: 29%;
-        margin-top: -15%;
-    }
-    .line{
-        margin-top: -8%;
-    }
-    .fea-main{
-        font-size: 19px;
-        margin-left: 9%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-left: -3%;
-        margin-top: 5%;
-        color: white;
-    }
-    .fea-main>h1{
-        margin-left: 4%;
-    }
-    .card1{
-        margin-top: 60%;
-        margin-left: -65%;
-        
-
-    }
-    .card2{
-        margin-top: -32%;
-        margin-left: 2%;
-    }
-    .card3{
-        margin-top: -31.9%;
-        margin-left: 69%;
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:8,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive:{
+        0:{
+            items:1.5
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        },
         
     }
-    .card4{
-        margin-top: 7%;
-        justify-content: center;
-        align-items: center;
-        margin-left: 3%;
+})
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      arrows: true,
+      loop:true,
+      autoplay: {
+       delay: 3000, // Delay between slides in milliseconds
+       disableOnInteraction: true, // Autoplay continues even when the user interacts with the carousel
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
         
-    }
-    .sit{
-        width:31%;
-        margin-left: 36%;
-        margin-top: -83%; 
-        position: absolute;
-    }
-    .real-strength{
-        justify-content: center;
-        align-items: center;
-        margin-left: 41%;
-    }
-    .progress{
-        font-size: 85%;
-    }
-    .progress li::before{
-        width: 26%;
-    }
-    .level{
-        margin-left: -14%;
-        margin-top: -19.2%;
-        font-size: 15px;
-    }
-    .progress1{
-        margin-left: -19%;
-        margin-top: 3.5%;
-        font-size: 91%;
-    }
-    .progress1 li::before{
-        width: 56%;
-        
-    }
-    .level1{
-        margin-left: -28%;
-        font-size: 15px;
-        margin-top: 4%;
-    }
-}
-@media (max-width:479px) {
-    .body{
-        background: url(./Frame\ 191.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        overflow-x: hidden;
-        background-attachment: fixed;
-    }
-    .team-strength{
-        display: none;
-    }
-    .navbar>img{
-        width:43%;
-    }
-    .nav-links ul{
-        display: none;
-    }
-    .work{
-        margin-top: -51%;
-        margin-right: 9%;
-        width:43%
-    }
-    .title>h1{
-        margin-top: 47%;
-        font-size: 31px;
-        margin-left: 36%;
-        
-    }
-    .title-para{
-        margin-left: 36%;
-        font-size: 12px;
-    }
-    .title-para1{
-        margin-left: 35%;
-        font-size: 12px;
-        margin-bottom: 3%;
-    }
-    .fea-main{
-        font-size: 14px;
-    }
-    .fea-main>p{
-        font-size: 13px;
-        margin-left: 5%;
-    }
-    .sit{
-        display: none;
-    }
-    /* .card1{
-        margin-top: 22%;
-        margin-left: -53%;
-    }
-    .card1>img{
-        width:193px
-    }
-    .card-head{
-        font-size: 15px;
-        margin-left: -9%;
-        margin-top: -22%;
-    }
-    .dev{
-        width:19%
-    }
-    .card-bul{
-        font-size: 14px;
-        margin-top: 12%;
-    }
-    .card2{
-        margin-top: -52%;
-        margin-left: 49%;
-        
-    }
-    .card2>img{
-        width:193px;
-    }
-    .card-bul1{
-        font-size: 14px;
-        margin-top: 16%;
-    }
-    .card-head1{
-        font-size: 15px;
-        
-        margin-top: -22%;
-    }
-    .dev1{
-        width:19%;
-    }
-    .card3{
-        margin-top: 12%;
-        margin-left: -52%;
-    }
-    .card3>img{
-        width:193px
-    }
-    .card-bul2{
-        font-size: 12px;
-        margin-top: 16%;
-    }
-    .card-head2{
-        font-size: 15px;
-        
-        margin-top: -22%;
-    }
-    .dev2{
-        width:19%;
-    }
-    .card4{
-        margin-top: -51.3%;
-        margin-left: 48%;
-    }
-    .card4>img{
-        width:193px
-    }
-    .card-bul3{
-        font-size: 14px;
-        margin-top: 16%;
-    }
-    .card-head3{
-        font-size: 15px;
-        
-        margin-top: -22%;
-    }
-    .dev3{
-        width:21%;
-        margin-top: -47%;
-    } */
-    .real-strength{
-        justify-content: center;
-        margin-left: 32%;
-    }
-    .progress li::before{
-        width: 56%;
-    }
-    .level{
-        margin-left: -26%;
-        margin-top: -39.2%;
-        font-size: 15px;
-    }
-    .progress1 li::before{
-        width: 56%;
-    }
-    .level1{
-        margin-left: -156%;
-        margin-top: 8%;
-        font-size: 15px;
-    }
-    .progress1{
-        margin-left: -132%;
-        margin-top:53%;
-    }
-    .video-title{
-        font-size: 137%;
-        margin-left: 5%;
-    }
-    .real-video>iframe{
-        width:1190%;
-    }
-    .text1{
-        font-size: 122%;
-        margin-left: 3%;
-    }
-    .img_box{
-        width:159%;
-        margin-left: 23%;
-    }
-    
-    .splide_wrapper .splide__pagination{
-       margin-top: -12%;
-    }
-    .why-title{
-        font-size: 223%;
-    }
-    
-    .why-bull{
-        font-size:73%;
-        margin-left: 5%;
-    }
-    .teambox{
-        margin-left: 8%;
-    }
-    .team-dis{
-        width:73%;
-        margin-left: 13%;
-    }
-    .dis-title{
-        font-size: 25px;
-        margin-left: 12%;
-        margin-top: -16%;
-    }
-    .dis-title2{
-        font-size: 7px;
-        margin-left: 52%;
-        margin-top: -32%;
-    }
-    .cv-btn{
-        width: 27%;
-        height: 14px;
-        font-size: 7px;
-        margin-left: 58%;
-    }
-    .cv-btn>p{
-        margin-top: -4%;
-    }
-    .working{
-        display: none;
-    }
-    .teambox{
-        width:273px
-    }
-    .why-bull{
-        padding-top: 32%;
-    }
-    .why-bull>li{
-        padding-top: 32px;
-        padding-left: 0px ;
-        padding-right: 0px ;
-        padding-bottom: 0px ;
-        font-size: 15px;
-    }
-    .why-bull{
-        margin-left: -159%;
-        margin-top: -23%;
-    }
-    .why-dots{
-        justify-content: space-around;
-        align-items: center;
-        
-        gap:32px;
-    }
-    .why-bull2{
-        margin-left: 2%;
-        margin-top: 9%;
-        font-size: 15px;
-    }
-    .why-bull2>li{
-        padding-top: 32px;
-        padding-left: 0px ;
-        padding-right: 0px ;
-        padding-bottom: 0px ;
-        font-size: 15px;
-    }
-    .foot{
-        display: none;
-    }
-    .lastboss{
-        display: none;
-    }
-    .addboss{
-        display: block;
-    }
-    .dis-title2{
-        margin-top: -8%;
-        font-size: 15px;
-        margin-left: 1%;
-        justify-content: center;
-        text-align: center;
-    }
-    .cv-btn{
-        width: 53%;
-        height: 34px;
-        font-size: 19px;
-        margin-left: 24%;
-        margin-top: 9%;
-    }
-    .cv-btn>p{
-        margin-top: -2%;
-    }
-    .why{
-        display: none;
-    }
-}
-@media screen and (max-width:415px) {
-    .title>h1{
-         text-align: center;
-         justify-content: center;
-         align-items: center;
-         padding: 0 19px 0 45px;
-    }
-    .title-para{
-        padding: 0 19px 0 55px;
-    }
-     .card1{
-        margin-top: 13%;
-        /* margin-left: 12%; */
-        justify-content: center;
-        align-items: center;
-        padding: 0 18% 0 83%;
-     }
-     .card2{
-        margin-top: 16%;
-        /* margin-left: 12%; */
-       justify-content: center;
-       align-items: center;
-       padding: 0 12% 0 12%;
-     }
-     
-     .card3{
-        margin-top: 16%;
-        margin-left: 3%;
-     }
-    
-     .card4{
-        margin-top: 16%;
-        margin-left: 3%;
-     }
-     .level{
-        margin-left: -40%;
-        margin-top: -43.6%;
-     }
-     .progress1{
-        margin-left: -148%;
-        display: flex;
-        flex-direction: column;
-     }
-     .level1{
-        margin-left: -186%;
-        margin-top: -42%;
-     }
-     .cv-btn{
-        font-size: 3.7vw;
-     }
-}
-@media screen and (max-width: 360px) {
-        .title>h1{
-           font-size: 7vw;
-        }
-        .body{
-            overflow-x: hidden;
+        428:{
+            slidesPerView:1,
+            spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+
+    $(".readmore-btn").on('click', function(){
+        $(this).parent().toggleClass("showContent");
+
+        var replaceText = $(this).parent().hasClass("showContent") ? "See Less Features" : "See all Features";
+        $(this).text(replaceText);
+    });
+var swiper = new Swiper(".mySwiperr", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      
+      slidesPerView: '2',
+      breakpoints:{
+        328:{
+            slidesPerView:'1.3',
             
         }
-        .title-para{
-            font-size: 2.7vw;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-        }    
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level{
-            margin-top: -46%;
-            margin-left: -53% ;
-            font-size: 3.3vw;
-        }
-        .progress1{
-            margin-left:-173%;
-        }
-        .level1{
-            margin-left: -223%;
-            font-size: 3.3vw;
-            margin-top: -43%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 5vw;
-            margin-left: 14%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-      }
-    
-    @media screen and (max-width: 375px) {
-        .splide__pagination{
-            margin-right: -12%;
-        }
-        .work{
-            margin-right: 7%;
-        }
-        .title>h1{
-            font-size: 7vw;
-            text-align: center;
-            margin-left: 39%;
-        }
-        .real-strength{
-            text-align: center;
-            margin-left: 26%;
-        }
-        .title-para{
-            font-size: 2.7vw;
-            margin-left: 38%;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-            margin-left: 42%;
-        }
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level ul{
-            margin-top: -33%;
-            margin-left: 74% ;
-            font-size: 3.3vw;
-        }
-        .progress1 ul{
-           margin-left: 64%;
-        }
-        .level1 ul{
-            margin-left: 87.6%;
-            font-size: 3.3vw;
-            margin-top: -14.6%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 3vw;
-            margin-right: -14%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-        .line3{
-            width:70%;
-            align-items: center;
-            justify-content: center;
-            margin-left: 15%;
-        }
-        
-        .splide_wrapper .splide__pagination{
-            margin-left: 18%;
-        }
-    }
-    @media  screen and (max-width:390px) {
-        .title>h1{
-            font-size: 7vw;
-        }
-        .title-para{
-            font-size: 2.7vw;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-        }
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level{
-            margin-top: -45%;
-            margin-left: -45% ;
-            font-size: 3.3vw;
-        }
-        .progress1{
-            margin-left: -157%;
-        }
-        .level1{
-            margin-left: -201%;
-            font-size: 3.3vw;
-            margin-top: -43%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 5vw;
-            margin-left: 34%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-        .line3{
-            width:70%;
-            align-items: center;
-            justify-content: center;
-            margin-left: 15%;
-        }
-    }
-    @media  screen and (max-width:400px) {
-        .work{
-            margin-right: 7%;
-        }
-        .splide_wrapper .splide__pagination{
-            margin-left: 19%;
-        }
-        .title>h1{
-            font-size: 7vw;
-        }
-        .title-para{
-            font-size: 2.7vw;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-        }
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level{
-            margin-top: -44%;
-            margin-left: -43% ;
-            font-size: 3.3vw;
-        }
-        .progress1{
-            margin-left: -154%;
-        }
-        .level1{
-            margin-left: -195%;
-            font-size: 3.3vw;
-            margin-top: -42%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 5vw;
-            margin-left: 34%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-        .line3{
-            width:70%;
-            align-items: center;
-            justify-content: center;
-            margin-left: 15%;
-        }
-    }
-    
-    @media screen and (max-width:415px) {
-        .add-main{
-            justify-content: space-between;
-            align-items: center;
-            display: flex;
-            color: #1770b5;
-            font-size: 11px;
-            margin-left: 12%;
-        }
-        .add2{
-            margin-right:-14px ;
-        }
-        .add1{
-            margin-left: 30px;
-        }
-        .add{
-            margin-left: 12px;
-        }
-        .add-main2{
-            font-size: 10px;
-            margin-left: 33%;
-            padding: 0 0 0 15px;
-        }
-        .splide_wrapper .splide__pagination{
-            margin-left: 20%;
-        }
-        #nav-toggle{
-            width:23px;
-            margin-left: 12%;
-        }
-        .title>h1{
-            font-size: 7vw;
-        }
-        .title-para{
-            font-size: 2.7vw;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-        }
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level ul{
-            margin-top: 6%;
-            margin-left: 72% ;
-            font-size: 3.3vw;
-        }
-        .progress1{
-            margin-left: -147%;
-        }
-        .level1{
-            margin-left: -184%;
-            font-size: 3.3vw;
-            margin-top: -41%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 5vw;
-            margin-left: 34%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-        .text1{
-            text-align: center;
-            
-        }
-        .team-title{
-            font-size: 8vw;
-            text-align: center;
-            
-        }
-        .line3{
-            width:70%;
-            align-items: center;
-            justify-content: center;
-            margin-left: 15%;
-        }
-    }
-    @media screen and (max-width:380px) {
-        .work{
-            margin-right: 7%;
-        }
-        .title>h1{
-            font-size: 7vw;
-            
-        }
-        .splide_wrapper .splide__pagination{
-            margin-left: 20%;
-        }
-        .title-para{
-            font-size: 2.7vw;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-        }
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level ul{
-            margin-top: -32%;
-            margin-left: 74% ;
-            font-size: 3.3vw;
-        }
-        .progress1 ul{
-           margin-left: 64%;
-        }
-        .level1 ul{
-            margin-left: 87.6%;
-            font-size: 3.3vw;
-            margin-top: -14.2%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 5vw;
-            margin-left: 34%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-        .line3{
-            width:70%;
-            align-items: center;
-            justify-content: center;
-            margin-left: 15%;
-        }
-    }
-    @media screen and (max-width:429px) {
-        
-        .work{
-            margin-left: 32%;
-        }
-        .splide_wrapper .splide__pagination{
-            margin-left: 20%;
-        }
-        
-        .title>h1{
-            font-size: 7vw;
-            margin-left: 39%;
-        }
-        .title-para{
-            font-size: 2.7vw;
-            margin-left: 39%;
-        }
-        .title-para1{
-            font-size: 2.7vw;
-        }
-        .fea-main>h1{
-            font-size: 4vw;
-        }
-        .fea-main>p{
-            font-size: 2.7vw;
-        }
-        .level ul{
-            margin-top: -33%;
-            margin-left: 69% ;
-            font-size: 3.3vw;
-        }
-        .progress1 ul{
-            margin-left: 60%;
-        }
-        .level1 ul{
-            margin-right: 13%;
-            font-size: 3.3vw;
-            margin-top: -11%;
-        }
-        .dis-title{
-            font-size: 6vw;
-            margin-left: 7%;
-        }
-        .dis-title2{
-            font-size: 3vw;
-        }
-        .cv-btn{
-            font-size: 3.5vw;
-        }
-        .teambox{
-            width: 113%;
-        }
-        .teambox>h3{
-            font-size: 5vw;
-            margin-left: 34%;
-        }
-        .teambox>p{
-            font-size: 3.6vw;
-        }
-        .text1{
-            text-align: center;
-            
-        }
-        .team-title{
-            font-size: 8vw;
-            text-align: center;
-            
-        }
-        .line3{
-            width:70%;
-            align-items: center;
-            justify-content: center;
-            margin-left: 15%;
-        }
-        .card1{
-            margin-top: 13%;
-            /* margin-left: 12%; */
-            justify-content: center;
-            align-items: center;
-            padding: 0 18% 0 83%;
-         }
-         .card2{
-            margin-top: 16%;
-            /* margin-left: 12%; */
-           justify-content: center;
-           align-items: center;
-           padding: 0 12% 0 12%;
-         }
-         
-         .card3{
-            margin-top: 16%;
-            margin-left: 3%;
-         }
-        
-         .card4{
-            margin-top: 16%;
-            margin-left: 3%;
-         }
-    }
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+      // pagination:{
+      //   el: 'swiper-pagination',
+      // }
+      
+    });
+
+  </script>
+</body>
+</body>
+
+</html>
