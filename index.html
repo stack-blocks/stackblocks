@@ -2,341 +2,938 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Blocks</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/Frame_182-removebg-preview.png">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.1/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=M+PLUS+1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <title>Gym Website</title>
 </head>
 
-<body>
-    <nav>
-        <div class="container main-nav flex">
-            <!-- <a href="#" class="company-logo">
-                <img src="./assets/asset 1.png" alt="">
-            </a> -->
-            <div class="nav-links" id="nav-links">
-                <ul class="flex">
-                    <li><a href="#" class="hover-links">Home</a></li>
-                    <li><a href="#" class="hover-links">About Us</a></li>
-                    <li><a href="#" class="hover-links">Program</a></li>
-                    <li><a href="#" class="hover-links">Membership</a></li>
-                    <li><a href="#" class="hover-links">Testimonials</a></li>
-                    <li><a href="#" class="hover-links sec-button">Sign In</a></li>
-                </ul>
-            </div>
+<body >
+  <div class="main-load" onload="load()" id="context">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+</div>
 
-            <!-- <a href="#" class="nav-toggle hover link" id="nav-toggle"><i class="fa-sharp fa-solid fa-bars"></i></a> -->
-        </div>
+  <div class="container1">
+  <header>
+    <nav class="navbar">
+       <a href="#" class="nav-branding"><img src="./Frame 177.png" width="234px"></a>
+       <ul class="nav-menu">
+           <li class="nav-item">
+               <a href="index.html" class="nav-link" id="link">Home</a>
+           </li>
+           <li class="nav-item">
+               <a href="#fea" class="nav-link" id="link">Features</a>
+           </li>
+           <li class="nav-item">
+               <a href="#rev" class="nav-link" id="link">Reviews</a>
+           </li>
+           <!-- <li class="nav-item">
+            <a href="#" class="nav-link" id="link">About Us</a>
+           </li> -->
+           <li class="nav-item">
+            <a href="#proj" class="nav-link" id="link">Projects</a>
+            </li>
+           <li class="nav-item" id="contu">
+               <a href="#" class="nav-link">Contact us</a>
+           </li>
+       </ul>
+       <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+       </div>
     </nav>
+   </header>
+  </div>
+  <div class="container1  data-scroll-index = 1">
+    <!-- <div class="curve"> -->
+    <!-- <img src="./images/Ellipse 276.png"> -->
+    <!-- </div> -->
+    <div class="title">
+      <!-- <img class = "work" src="images/12780654_5052907 1.png" alt="">
+          <img class ="work1" src="images/Frame 174.png"> -->
+      <h1 id="tile">
+        <span id="hell">Unleashing</span> the Power of<br><span id="hell1">Design and Technology.</span>
+        
+
+      </h1>
+      <img class="work" src="images/12780654_5052907 1.png" alt="">
+      <!-- <img class = "work" src="images/12780654_5052907 1.png" alt="">
+          <img class ="work1" src="images/Frame 174.png"> -->
+      <p class="title-para" id=creat>
+        We create beautiful, functional, and user-friendly websites that will
+      </p>
+      <p class="title-para1">
+        help you achieve your business goals
+      </p>
+
 
     </div>
-    <header>
-        <div class="container header-section flex">
-            <div class="header-left">
-                <h1>GET HEALTHY BODY<br>WITH THE PERFECT<br>EXERCISES</h1>
-                <p>We are always there to help you to make a healthy body and mind through the power of fitness</p>
-                <a href="#" class="sec-button btn">Get Started</a>
-                <div class="rectangle">
-                    <img src="Frame 90.png" alt="" width="40px">
-                    <p>Watch Video</p>
-                    <div class="trainee-features1">
-                        <h1>105+</h1>
-                        <p>Expert Trainers</p>
+    <img class="line" src="images/Line 69.png">
+  </div>
+  <section class="Features" id="fea">
+    <div class="container1 ">
+
+      <div class="fea-main">
+      <h1 class="fea-head" id="feau">
+        <span id="hell3">Features</span> We Provide To Our Customers
+      </h1>
+      <p class="title-para3" id="tileu">
+        Our website making company offers cutting-edge features<br>including responsive design, intuitive navigation,
+        SEO optimization,<br> customizable templates, e-commerce integration, secure hosting,<br> social media
+        integration, and seamless user experience.
+      </p>
+      </div>
+      <div class="card-1">
+        <div class="card1" id="card1">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head">Web development</h3>
+          <ul class="card-bul">
+            <li>Responsive design</li>
+            <li>Customizable templates</li>
+            <li>User-friendly interface</li>
+            <li>SEO optimization</li>
+          </ul>
+          <div class="dev">
+            <img src="images/noun-web-development-1849639.png">
+          </div>
+
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="card2">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head1">UI/UX Design</h3>
+          <ul class="card-bul1">
+            <li>Seamless user flow design</li>
+            <li>Visual hierarchy design</li>
+            <li>User-centered design<br>approach</li>
+            <li>Interactive prototyping for<br>validation</li>
+          </ul>
+          <div class="dev1">
+            <img src="images/noun-ui-ux-design-4900096.png">
+          </div>
+        </div>
+      </div>
+      <img class="sit" src="images/Character.png">
+      <div class="card-3">
+        <div class="card3">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head2">App Development</h3>
+          <ul class="card-bul2">
+            <li>Cross-platform compatibility</li>
+            <li>Offline functionality support</li>
+            <li>Secure user authentication</li>
+            <li>Real-time data synchronization</li>
+          </ul>
+          <div class="dev2">
+            <img src="images/noun-ui-ux-design-4900096.png">
+          </div>
+        </div>
+      </div>
+      <div class="card-4">
+        <div class="card4">
+          <img src="images/Rectangle 404.png">
+          <h3 class="card-head3">Graphic Design</h3>
+          <ul class="card-bul3">
+            <li>Logo design</li>
+            <li>Infographic design</li>
+            <li>Packaging design</li>
+            <li>Layout and composition<br>design</li>
+          </ul>
+          <div class="dev3">
+            <img src="images/Group (1).png">
+          </div>
+        </div>
+      </div>
+      <!-- <img class="ring" src="images/Vector.png"> -->
+    </div>
+  </section>
+  <section class="team-strength">
+    <div class="container1 ">
+      <p class="real-strength">Team strength</p>
+      <div class="progress">
+        <ul>
+          <li class="front1">FRONTEND</li>
+          <li class="front2">UI/UX</li>
+          <li class="front3">WEB APPLICATION</li>
+          <li class="front4">APP (ANDROID/IOS)</li>
+        </ul>
+
+      </div>
+      <div class="level">
+        <ul>
+          <li>Advance</li>
+          <li>Advance</li>
+          <li>Intermediate- Advance</li>
+          <li>Advance</li>
+        </ul>
+      </div>
+
+      <div class="progress1">
+        <ul>
+          <li class="back1">BACKEND</li>
+          <li class="back2">MOTION GRAPHICS</li>
+          <li class="back3">LOGO/ GRAPHIC DESIGN</li>
+
+        </ul>
+
+      </div>
+      <div class="level1">
+        <ul>
+          <li>Intermediate- Advance</li>
+          <li>Intermediate- Advance</li>
+          <li>Advance</li>
+
+        </ul>
+      </div>
+      <img class="line" id="liney" src="images/Line 69.png">
+
+    </div>
+  </section>
+  <!-- <section class="video">
+    <div class="container1 ">
+      <div class="textboss2">
+      <h1 class="video-title">
+        Know More About Us Through <span id="hell">Visuals</span>
+      </h1>
+      </div>
+      <div class="real-video">
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/0lADveyC6gs"
+          title="I'm Losing My Mind Now! *ASUS ROG Ally*" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+  </section> -->
+  <section>
+    <div class="container1">
+      <div class="price-title">
+      <h1> Our <span id = "hell">Pricing</span></h1>
+      
+      </div>
+      <p class="price-para">Affordable web development pricing, delivering quality solutions for your business.</p>
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="box1">
+              <div class="swiper-slide">
+                  <div class="box1">
+                      <img src="./Group 9020 (1).png">
+                      
+                      <div class="ul">
+                          
+                          
+                          <li>5 Pages
+                          </li>
+                          <li>Static Site
+                          </li>
+                          <li>+5000 Rs for Table Reservation System</li>
+                          
+                          <li>WhatsApp API Integration
+                          </li>
+                          <li>Basic Security
+                          </li>
+                          <li>800 Rs. Per customization
+                          </li>
+                          
+                          <li>1 Email Account
+                          </li>
+              
+                          <li>Free POS Software
+                          </li>
+                          
+                          <li>3,000 Monthly Maintenance
+                          </li>
+                          
+                      </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide" >
+                  <div class="box1">
+                    <img src="./Frame 1.png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Static Site
+                        </li>
+                        <li>+5000 Rs for Table Reservation System</li>
+                        
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Cloud Security
+                        </li>
+                        <li>First 2 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>4 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
                     </div>
-                    <div class="trainee-features1">
-                        <h1>970+</h1>
-                        <p>Members Joined</p>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="box1">
+                    <img src="./Group 9019 (1).png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Dynamic website
+                        </li>
+                        <li>+5000 Rs for Table Reservation System</li>
+                        <li>Free QR Code Menu System
+                        </li>
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Imunify360 Firewall + Cloud Security
+                        </li>
+                        <li>First 3 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>4 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
                     </div>
-                    <div class="trainee-features1">
-                        <h1>135+</h1>
-                        <p>Fitness Programs</p>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="box1">
+                    <img src="./Group 9023 (3).png">
+                      
+                    <div class="ul">
+                        <li>2-Installment Payment Method</li>
+                        
+                        <li>10 Pages
+                        </li>
+                        <li>Dynamic website
+                        </li>
+                        <li>SMS Gateway Integration
+                        </li>
+                        <li>+5000 Rs for Table Reservation System
+                        </li>
+                        <li>Free QR Code Menu System
+                        </li>
+                        <li>WhatsApp API Integration
+                        </li>
+                        <li>Imunify360 Firewall + Cloud Security
+                        </li>
+                        <li>First 3 Customization for free
+                        </li>
+                        <li>800 Rs. Per customization
+                        </li>
+                        <li>5 Email Accounts
+                        </li>
+            
+                        <li>Free POS Software
+                        </li>
+                        
+                        <li>3,000 Monthly Maintenance
+                        </li>
+                        
+                    </div>
+                      <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box1">
+                  <img src="./Group 9025 (1).png">
+                    
+                  <div class="ul">
+                      <li>3-Installment Payment Method</li>
+                      
+                      <li>20 Pages
+                      </li>
+                      <li>Gallery for Website
+                      </li>
+                      <li>Dynamic website
+                      </li>
+                      <li>SMS Gateway Integration
+                      </li>
+                      <li>+5000 Rs for Table Reservation System
+                      </li>
+                      <li>Free QR Code Menu System
+                      </li>
+                      <li>WhatsApp API Integration
+                      </li>
+                      <li>AWS Firewall + Cloud Security
+                      </li>
+                      <li>First 6 Customization for free
+                      </li>
+                      <li>800 Rs. Per customization
+                      </li>
+                      <li>10 Email Accounts
+                      </li>
+          
+                      <li>Free POS Software
+                      </li>
+                      
+                      <li>3,000 Monthly Maintenance
+                      </li>
+                      
+                  </div>
+                    <a href="javascript:void();" class = "readmore-btn">See all Features</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+  </section>
+  <!-- <section>
+    <div class="container1">
+        <div class="price-title">
+            <h1>Our<span id="hell"> Pricing</span></h1>
+        </div>
+        <div class="price-wrap">
+         <div class="pricecard">
+            <div class="price-cont1">
+                 <h1>Basic</h1>
+                <div class="price-cont2">
+                    
+                </div>
+            </div>
+         </div>
+         <div class="pricecard">
+          <div class="price-cont1">
+               <h1>Pro</h1>
+              <div class="price-cont2">
+                  
+              </div>
+          </div>
+       </div>
+       <div class="pricecard">
+        <div class="price-cont1">
+             <h1>Premium</h1>
+            <div class="price-cont2">
+                
+            </div>
+        </div>
+     </div>
+    </div>
+    </div>
+  </section> -->
+  
+  <section>
+    <div class="container1">
+      <div class="textboss">
+      <h1 class="text1">
+        some of the
+        <span class="blue">brands</span>
+        we have worked with
+      </h1>
+      </div>
+      <div class="splide_wrapper">
+        <div class="splide">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1.png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="./image 1 (5).png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1 (2).png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1 (3).png">
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img class="img" src="images/image 1 (4).png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="working">
+        <img src="images/Frame 189.png" alt="">
+      </div>
+    </div>
+   
+  </section>
+  <section class="why">
+    <div class="container1 ">
+      <div class="titlemax">
+        <h1 class="why-title" id="why">
+          Why <span id="hell">Choose</span> Us?
+        </h1>
+        <p>Discover client experiences, their words echoing our commitment to exceptional service and satisfaction.</p>
+      </div>
+      <div class="why-dots">
+        <ul class="why-bull">
+          <li>Collaboration and Communication</li>
+          <li>Quality Assurance</li>
+          <li>Timely Delivery</li>
+          <li>Ongoing Support and Maintenance</li>
+        </ul>
+
+
+        <ul class="why-bull2">
+          <li>Expertise and Experience</li>
+          <li>Customized Solutions</li>
+          <li>Innovative Design and Development</li>
+          <li>User-Centric Approach</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container1">
+      <div class="textboss5">
+      <h1 class="team-title">
+        Meet Our <span id="hell">Team</span>
+      </h1>
+      <p>Our team delivers tailored solutions and exceptional service for your needs.</p>
+     </div>
+    </div>
+    <div class="container1">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="teambox">
+            <img src="./Group 4.svg">
+            <!-- <h3>Kunal <span id="hell"></span></h3>
+            <p>Co-Founder,UI/UX Designer</p> -->
+          </div>
+        </div>
+        <div class="item">
+          <div class="teambox">
+            <img src="./Group 5.svg">
+            <!-- <h3>Subhajit <span id="hell"></span></h3>
+            <p>Co-Founder,Frontend Developer</p> -->
+          </div>
+        </div>
+        <div class="item">
+          <div class="teambox">
+            <img src="./Group 6.svg">
+            <!-- <h3>Saurojit <span id="hell"></span></h3>
+            <p>Co-Founder,Backend Developer</p> -->
+          </div>
+        </div>
+       
+    </div>
+    </div>
+      
+      </div>
+      <img class="line3" src="images/Line 69.png">
+    </div>
+  </section>
+  <section>
+    <div class="container1">
+      <div class="wrapper">
+        <h1 class="section-header" id="proj">Our <span id="hell">Projects</span></h1>
+        <div class="main-content">
+            <div class="box">
+                <img src="images/image 27.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Olicha</h2>
+                    <p>Olicha: Where luxury meets culinary artistry. A harmonious restaurant where blend of taste and comfort awaits.</p>
                     </div>
                 </div>
             </div>
-            <div class="header-right">
-                <img src="pngwing.com (4).png" alt="">
-            </div>
-        </div>
-    </header>
-
-
-    <section class="About-Us section">
-        <div class="container flex about-Us-container">
-            <img src="pngwing.com.png" alt="" width="400px">
-            <div class="about_desc">
-                <h2>Get Ready to Reach <br> Your Fitness Goals</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lectus quam id leo in vitae. Ut sem viverra aliquet eget sit.<br> Egestas pretium aenean pharetra magna
-                    ac. Risus pretium<br>.sollicitudin ac orci phasellus egestas tellus rutrum.<br> Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Tristique senectus <br>et netus et malesuada fames. Semper risus in hendrerit gravida
-                    rutrum quisque non.<br> A iaculis at erat pellentesque adipiscing commodo elit at. <br>Tortor dignissim convallis aenean et tortor at
-                </p>
-                <a href="#" class="sec-button btn1">Free Trial Today</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="Our-Programs">
-        <div class="container flex program-section">
-            <h1>The Best Programs We <br> Offers For You</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Nunc sed id semper risus in hendrerit gravida rutrum quisque.<br> Cursus vitae congue mauris rhoncus aenean vel.</p>
-        </div>
-        <div class="container flex rectangle1">
-            <img src="dumbbell.png" alt="" width="100px">
-            <h1>Strength Training</h1>
-            <p style="color: rgb(255, 255, 255); text-align: center; margin-top: -5px; margin-left: -10px; font-size: 13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-        <div class="container rectangle1">
-            <img src="yoga.png" alt="" width="100px">
-            <h1 style="margin-top: 17px;">Basic Yoga</h1>
-            <p style="color: rgb(255, 255, 255); text-align: center; margin-top: -5px; margin-left: -10px; font-size: 13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-        <div class="container rectangle1">
-            <img src="biceps.png" alt="" width="80px">
-            <h1 style="margin-top: 17px;">Body Building</h1>
-            <p style="color: rgb(255, 255, 255); text-align: center; margin-top: -5px; margin-left: -10px; font-size: 13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-        <div class="container rectangle1" style="margin-right: 10px">
-            <img src="man1.png" alt="" width="80px">
-            <h1 style="margin-top: 17px;">Weight Loss</h1>
-            <p style="color: rgb(255, 255, 255); text-align: center; margin-top: -5px; margin-left: -10px; font-size: 13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        </div>
-    </section>
-
-    <!-- <div class="spacer" style="height: 150px"></div> -->
-    <section class="why-choose-us">
-        <div class="container flex choosing-section">
-            <h1>Why Should People Choose <br> Our Services</h1>
-            <img src="pngwing.com (3).png" alt="" width="400px" style="margin-top: 200px; margin-left: 100px;">
-        </div>
-
-
-        <div class="choosing-features">
-
-            <div class="choosing-features1">
-                <h2><i class="fa-solid fa-circle-check" style="color: #ffa200;"></i> Personal Training</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="choosing-features1" style="margin-top: 30px;">
-                <h2><i class="fa-solid fa-circle-check" style="color: #ffa200;"></i> Expert Trainer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="choosing-features1" style="margin-top: 30px;">
-                <h2><i class="fa-solid fa-circle-check" style="color: #ffa200;"></i> Flexible Time</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-
-            <a href="#" class="sec-button btn" style="color: white;">Join Today</a>
-        </div>
-
-    </section>
-
-    <div class="spacer" style="height: 150px"></div>
-
-    <section class="pricing-section">
-        <div class="container pricing-section">
-            <h1>Choose The Best Plan</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="button-container">
-                <a href="#" class="pri-button btn">Monthly</a>
-                <a href="#" class="sec-button btn" style="color: white;">Anually</a>
-            </div>
-
-            <div id="card-container">
-                <div class="pro1">
-                    <div class="card1">
-                        <h5>Discover</h5>
-                        <div class="price">
-                            <h3>&#8377; 499.00 <span>/ Per Month</span> </h3>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <a href="#" class="pri-button btn">Choose Plan</a>
-                        </div>
+            <div class="box">
+                <img src="images/image 28.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>ByteBlogerbase</h2>
+                    <p>Discover a new way to share your thoughts with our innovative blog app. Express yourself through seamless writing, captivating visuals, and interactive engagement. Elevate your blogging experience today.</p>
                     </div>
                 </div>
-
-                <div class="pro1">
-                    <div class="card1">
-                        <h5>EnterPrise</h5>
-                        <div class="price">
-                            <h3>&#8377; 499.00 <span>/ Per Month</span> </h3>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <a href="#" class="pri-button btn">Choose Plan</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pro1">
-                    <div class="card1">
-                        <h5>Professional</h5>
-                        <div class="price">
-                            <h3>&#8377; 499.00 <span>/ Per Month</span> </h3>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <p><i class="fa-sharp fa-solid fa-check" style="color: #ffffff;"></i> Lorem ipsum dolor sit amet</p>
-                            <a href="#" class="pri-button btn">Choose Plan</a>
-                        </div>
+            </div>
+            <div class="box">
+                <img src="images/image 30.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Rajib Kar Retail Shop</h2>
+                    <p>A store where you can buy every groceries at a suitable price </p>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <div class="spacer" style="height: 150px"></div>
-
-    <section class="reviews-section">
-        <div class="container reviews-section ">
-            <h1>What Out Happy Clients <br>Say About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. <br>Placerat in egestas erat imperdiet sed euismod.</p>
-            <div class="images">
-                <img src="Profile Photo.png" alt="">
-                <img src="Profile Photo-1.png" alt="">
-                <img src="Frame 107.png" alt="">
-                <p style="margin-left: 7px;">+49 More</p>
-                <h1 style="font-size: 20px; margin-top: 5px; margin-left: 20px;"> <i class="fa-solid fa-star" style="color: #ffea00;"></i> 4.9 (40 Reviews)</h1>
-            </div>
-
-
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Frame 210.png" alt="">
-                        <h3>Farhan Rio</h3>
-                        <p>Happy Customer</p>
-                        <div class="icons">
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                        </div>
-
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h5>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Frame 107.png" alt="">
-                        <h3>Farhan Rio</h3>
-                        <p>Happy Customer</p>
-                        <div class="icons">
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                        </div>
-
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h5>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Profile Photo.png" alt="">
-                        <h3>Farhan Rio</h3>
-                        <p>Happy Customer</p>
-                        <div class="icons">
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                        </div>
-
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h5>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Profile Photo-1.png" alt="">
-                        <h3>Farhan Rio</h3>
-                        <p>Happy Customer</p>
-                        <div class="icons">
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                        </div>
-
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h5>
+            <div class="box">
+                <img src="images/image 321.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Maa Kali Body Point</h2>
+                    <p>Unlock your potential at Maa Kali Body Point gym, where sweat meets determination. Join us on a journey to a healthier, stronger you</p>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="box">
+                <img src="images/image 322.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Encoderspro</h2>
+                    <p>ENCODERSPRO Provides Courses related to Cybersecurity, Full-Stack Development, Networking & Advanced Bug Bounty with the best experts in India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/WhatsApp Image 2023-08-17 at 11.09.56 AM.jpeg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Landing Page Templates</h2>
+                    <p>Get awesome , handcrafted landing page templates at a suitable price</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
+  </section>
+  <!-- <section>
+    <div class="container1">
+      <img id="disid" src="images/Team Discussion.png">
+      <p id="going">Get a chance to <span id="hell"> work with us!</span></p>
+      <p id="going2">Connect To us Through Our Social Media Handles Or Directly Mail Us At </p>
+      <button id="going3"><a href="#">Share your cv / portfolio</a></button>
+  </div>
 
-    <div class="spacer" style="height: 150px"></div>
+  </section> -->
+  <section id="rev">
+    <div class="container1 ">
+      <div class="curse">
+        <h1 class="cus-title">
+          What Our Customer <span id="hell">Say About Us?</span>
 
-    <footer>
-        <div class="container flex footer-container">
-            <a href="#" class="company-logo">
-                <img src="./assets/asset 1.png" alt="">
-            </a>
-
-            <div class="link-column flex">
-                <h4>Company</h4>
-                <a href="" class="hover-links">Overview</a>
-                <a href="" class="hover-links">Pricing</a>
-                <a href="" class="hover-links">Research Panel</a>
-                <a href="" class="hover-links">Customers</a>
-                <a href="" class="hover-links">Sign up</a>
+        </h1>
+        <p>Hear from satisfied clients about their experiences, showcasing our commitment to excellence.</p>
+        <div class="container1">
+          <div class="swiper mySwiperr" id="custo">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Rectangle 339.png" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="link-column flex">
-                <h4>Categories</h4>
-                <a href="" class="hover-links">Card sorting</a>
-                <a href="" class="hover-links">Prototype testing</a>
-                <a href="" class="hover-links">First click tests</a>
-                <a href="" class="hover-links">Preference tests</a>
-                <a href="" class="hover-links">Five second tests</a>
-            </div>
+      </div>
+        <img class="line4" src="images/Line 69.png">
+      </div>
+    </div>
 
-            <div class="link-column flex">
-                <h4>Help</h4>
-                <a href="" class="hover-links">Blog</a>
-                <a href="" class="hover-links">Examples</a>
-                <a href="" class="hover-links">Testing guides</a>
-                <a href="" class="hover-links">Help center</a>
-                <a href="" class="hover-links">Contact</a>
-            </div>
+  </section>
 
-            <div class="link-column flex">
-                <h4>Contact Us</h4>
-                <a href="" class="hover-links">Blog</a>
-                <a href="" class="hover-links">Examples</a>
-                <a href="" class="hover-links">Testing guides</a>
-                <a href="" class="hover-links">Help center</a>
-                <a href="" class="hover-links">Contact</a>
-            </div>
+  <!-- <section >
+    <div class="container1 ">
+      <div class="foot">
+        <img class="foot-img" src="images/Rectangle 406.png">
+        <h3 class="foot-para">Connect To us Through Our Social Media Handles<br>Or Directly <span id="hell">Mail Us
+            At</span></h3>
+        
+            <input name="" type="text" class="input-field" required="required">
+        <h3 class="foot-email">
+          StackBlocks23@gmail.com
+        </h3>
+        <button class="Enter" type="submit" name="signup_submit" >Enter</button>
+      </div>
+      <div class="addboss">
+      <div class="add-main">
+        <h3 class="add">Address</h3>
+        <h3 class="add1">Contact Us</h3>
+        <h3 class="add2">Connect Us At Our Social Media Page</h3>
+      </div>
+      <div class="add-main2">
+        <h3 class="add3">Karimganj-Assam-India<br>788710</h3>
+        <h3 class="add4">Instagram - @Stack Blocks<br>91+9395593877<br>91+7086482787</h3>
+      </div>
+      <div class="add-img">
+        <img class="addimg1" src="images/twitter.png">
+        <img class="addimg1" src="images/instagram (4).png">
+        <img class="addimg1" src="images/linkedin (2).png">
+      </div>
+      <img class="line-last" src="images/Line 69.png">
+    </div>
+  </div>
+  </section>
+   <section>
+      <div class="container1 ">
+      <div class="lastboss">
+      <h3 class="last-title">©2023 StackBlocks.All rights reserved.</h3>
+      <img class="last-img" src="images/Frame 179.png">
+      </div>
+    </div>
+    </section> -->
+    
+    <footer class="footer-distributed">
 
-            <div class="subscribe">
-                <h1 style="font-size: 25px ;color: white; margin-left: 10px;">Subscribe our News Letter</h1>
-                <input type="" placeholder="Enter Your Email" style="padding: 4%; border-radius: 25px; margin-left: 60px; margin-top: 10px;">
-                <p style="margin-left: 20%;">Never Miss an update & <br>news to our email</p>
-            </div>
-        </div>
-    </footer>
+      <div class="footer-left">
+          <img src="images/Frame 179.png" alt="">
 
+          <p class="footer-links">
+              
+          </p>
+
+          <p class="footer-company-name">Copyright © 2023 <strong>StackBlocks</strong> All rights reserved</p>
+      </div>
+
+      <div class="footer-center">
+          <div id="kxj">
+              <i class="fa fa-map-marker"></i>
+              <p><span>Karimganj</span>
+                  Assam</p>
+          </div>
+
+          <div id="location">
+              <i class="fa fa-phone"></i>
+              <p>91+6003408379</p>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:sagar00001.co@gmail.com">StackBlocks23@gmail.com</a></p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>About the company</span>
+              <strong>Elevate</strong> your online presence with our agency's expert services. We craft immersive digital experiences that merge creativity with cutting-edge technology. From sleek designs to seamless functionality, we bring your vision to life.
+          <div class="footer-icons">
+              
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="https://instagram.com/stack_blocks?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"><i class="fa fa-linkedin"></i></a>
+              
+          </div>
+      </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+  <script>
+    
+  //  var preloader = document.getElementById('context');
+  //  function load(){
+  //   preloader.style.display = 'none';
+    
+  //  }
+  
+  $(window).on('load', function(){
+    setTimeout(function(){
+      $(".main-load").fadeOut('slow');
+    }, 2000)
+  })
+   
+   
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script>
+   const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",() => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener(
+    "click",() => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+))
+
+
+    var splide = new Splide('.splide', {
+      perPage: 3,
+      perMove: 1,
+      gap: '0.3rem',
+      arrows: false,
+      type: 'loop',
+      drag: 'free',
+      snap: true,
+      
+      autoplay: true,
+      breakpoints: {
+        640: {
+          perPage: 2,
+          gap: '.7rem',
+
+        },
+        480: {
+          perPage: 3,
+          gap: '6rem',
+
+        },
+      },
+    });
+
+    splide.mount();
+
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:8,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive:{
+        0:{
+            items:1.5
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        },
+        
+    }
+})
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      arrows: true,
+      loop:true,
+      autoplay: {
+       delay: 3000, // Delay between slides in milliseconds
+       disableOnInteraction: true, // Autoplay continues even when the user interacts with the carousel
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        
+        428:{
+            slidesPerView:1,
+            spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+
+    $(".readmore-btn").on('click', function(){
+        $(this).parent().toggleClass("showContent");
+
+        var replaceText = $(this).parent().hasClass("showContent") ? "See Less Features" : "See all Features";
+        $(this).text(replaceText);
+    });
+var swiper = new Swiper(".mySwiperr", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      
+      slidesPerView: '2',
+      breakpoints:{
+        328:{
+            slidesPerView:'1.3',
+            
+        }
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+      // pagination:{
+      //   el: 'swiper-pagination',
+      // }
+      
+    });
+
+  </script>
+</body>
 </body>
 
 </html>
